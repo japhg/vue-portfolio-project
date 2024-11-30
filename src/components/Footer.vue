@@ -40,10 +40,10 @@
     </div>
 </template>
 <script setup lang="ts">
-import FacebookIcon from "@/Components/Icons/FacebookIcon.vue";
-import GithubIcon from "@/Components/Icons/GithubIcon.vue";
-import LinkedinIcon from "@/Components/Icons/LinkedinIcon.vue";
-import TelegramIcon from "@/Components/Icons/TelegramIcon.vue";
-import UpworkIcon from "@/Components/Icons/UpworkIcon.vue";
-import GoogleIcon from "@/Components/Icons/GoogleIcon.vue";
+import FacebookIcon from "./icons/FacebookIcon.vue";
+import GithubIcon from "./icons/GithubIcon.vue";
+import LinkedinIcon from "./icons/LinkedinIcon.vue";
+import TelegramIcon from "./icons/TelegramIcon.vue";
+import UpworkIcon from "./icons/UpworkIcon.vue";
+import GoogleIcon from "./icons/GoogleIcon.vue";
 </script>

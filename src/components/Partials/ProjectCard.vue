@@ -46,15 +46,14 @@
     </a>
 </template>
 <script setup lang="ts">
-import InertiajsIcon from "@/Components/Icons/InertiajsIcon.vue";
-import LaravelIcon from "@/Components/Icons/LaravelIcon.vue";
-import TailwindIcon from "@/Components/Icons/TailwindIcon.vue";
-import VueIcon from "@/Components/Icons/VueIcon.vue";
-import BootstrapIcon from "@/Components/Icons/BootstrapIcon.vue";
-import PhpIcon from "@/Components/Icons/PhpIcon.vue";
-import GitIcon from "@/Components/Icons/GitIcon.vue";
-import MysqlIcon from "@/Components/Icons/MysqlIcon.vue";
-import CplusIcon from "@/Components/Icons/CplusIcon.vue";
+import InertiajsIcon from "../icons/InertiajsIcon.vue";
+import LaravelIcon from "../icons/LaravelIcon.vue";
+import TailwindIcon from "../icons/TailwindIcon.vue";
+import VueIcon from "../icons/VueIcon.vue";
+import BootstrapIcon from "../icons/BootstrapIcon.vue";
+import PhpIcon from "../icons/PhpIcon.vue";
+import GitIcon from "../icons/GitIcon.vue";
+import MysqlIcon from "../icons/MysqlIcon.vue";
 const props = defineProps<{
     url?: string;
     img?: string;
