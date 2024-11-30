@@ -17,7 +17,7 @@ const handleClick = (value: string) => {
     <img
       id="background"
       class="absolute right-0 top-0 max-w-[877px] hidden lg:block"
-      src="/images/gradient.png"
+      src="/images/gradient.png" 
     />
     <div
       class="relative flex flex-col items-center gap-5 justify-center selection:bg-[#FF2D20] selection:text-white"
