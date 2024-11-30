@@ -1,9 +1,12 @@
 @import './base.css';
 
+body {
+  background-color: #F8F9F9 !important  ;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
-  background-color: #F8F9F9 !important  ;
 }
