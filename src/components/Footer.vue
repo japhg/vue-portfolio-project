@@ -35,7 +35,7 @@
         </a>
     </div>
 
-    <div class="py-4 text-gray-700 text-sm">
+    <div class="py-4 text-gray-500 text-sm text-center">
         <p>© 2024 MyPortfolio. All rights Reserved.</p>
     </div>
 </template>

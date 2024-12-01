@@ -2,7 +2,7 @@
     <a
         :href="props.url"
         target="_blank"
-        class="bg-white border border-gray-300 rounded-md shadow-lg p-4 flex flex-col items-center gap-4"
+        class="bg-white border border-gray-100 rounded-md shadow-md p-4 flex flex-col items-center gap-4"
     >
         <div class="w-full">
             <img :src="props.img" class="rounded-md shadow" alt="" />
