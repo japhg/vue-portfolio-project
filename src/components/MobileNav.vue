@@ -1,0 +1,35 @@
+<script setup lang="ts">
+import { RouterLink } from "vue-router";
+
+const props = defineProps<{
+  show: boolean;
+}>();
+
+const links = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About",
+    url: "/about",
+  },
+  {
+    title: "Projects",
+    url: "/project",
+  },
+];
+</script>
+
+<template>
+  <div
+    v-if="show"
+    class="md:hidden w-full h-fit py-2 inset-0 bg-primary flex flex-col justify-center items-center gap-4"
+  >
+    <template v-for="link in links">
+      <RouterLink v-if="link.url != null" :to="link.url" class="my-2 font-medium">
+        {{ link.title }}
+      </RouterLink>
+    </template>
+  </div>
+</template>

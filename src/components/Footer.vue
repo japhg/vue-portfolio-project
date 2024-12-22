@@ -35,8 +35,8 @@
         </a>
     </div>
 
-    <div class="py-4 text-gray-500 text-sm text-center">
-        <p>© 2024 MyPortfolio. All rights Reserved.</p>
+    <div class="py-4 text-softBlack text-sm text-center">
+        <p>© {{ year }} MyPortfolio. All rights Reserved.</p>
     </div>
 </template>
 <script setup lang="ts">
@@ -46,4 +46,6 @@ import LinkedinIcon from "./icons/LinkedinIcon.vue";
 import TelegramIcon from "./icons/TelegramIcon.vue";
 import UpworkIcon from "./icons/UpworkIcon.vue";
 import GoogleIcon from "./icons/GoogleIcon.vue";
+
+const year = new Date().getFullYear();
 </script>

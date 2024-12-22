@@ -8,27 +8,16 @@ export default {
     colors: {
       ...colors,
       primary: {
-        DEFAULT: "#3AAFA9",
+        DEFAULT: "#FFB200",
       },
       secondary: {
-        DEFAULT: "#2B7A7B",
+        DEFAULT: "#111827",
       },
       softWhite: {
         DEFAULT: "#F8F9F9",
       },
       softBlack: {
         DEFAULT: "#17252A",
-      },
-      teal: {
-        100: "#d3f1f0",
-        200: "#a8e2e0",
-        300: "#7cd3d1",
-        400: "#50c4c1",
-        500: "#3AAFA9",
-        600: "#2c8c8b",
-        700: "#206a6a",
-        800: "#164848",
-        900: "#0e3333",
       },
     },
     extend: {

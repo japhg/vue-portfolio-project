@@ -1,10 +1,10 @@
 <template>
-    <div class="w-full max-w-7xl flex flex-col gap-5">
-        <h1 class="text-primary text-2xl md:text-5xl leading-2 font-bold">
-            Get in Touch
+    <div class="w-full max-w-7xl flex flex-col text-center gap-5">
+        <h1 class="text-softBlack text-2xl md:text-5xl leading-2 font-bold">
+            Get in touch
         </h1>
 
-        <p class="text-gray-500 font-medium text-sm md:text-lg tracking-wide">
+        <p class="text-secondary text-sm md:text-lg tracking-wide">
             Feel free to reach out if you have any questions, ideas, or
             opportunities you'd like to discuss. I'm always open to new
             collaborations and would love to hear from you. Get in touch, and
