@@ -15,7 +15,7 @@
             <a
                 href="mailto:jpgomera19@gmail.com"
                 target="_blank"
-                class="text-primary border border-[#FFC107] p-4 rounded-md font-bold text-sm md:text-base"
+                class="text-softBlack border border-softBlack p-4 rounded-md font-light bold text-sm md:text-base"
                 >Send an email</a
             >
         </div>
