@@ -15,6 +15,7 @@
             <SkillSet website="https://www.php.net/" icon="php" title="Php" />
             <SkillSet website="https://git-scm.com/" icon="git" title="Git" />
             <SkillSet website="https://www.mysql.com/" icon="mysql" title="MySQL" />
+            <SkillSet website="https://nuxt.com/" icon="nuxt" title="Nuxt" />
             <SkillSet website="https://cplusplus.com/" icon="cplus" title="C++" />
         </div>
     </div>

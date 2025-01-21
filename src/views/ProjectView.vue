@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full max-w-5xl my-20 flex flex-col gap-14">
+  <div class="w-full h-full max-w-5xl my-20 flex flex-col gap-14 font-sans">
     <h1 class="text-secondary text-2xl md:text-[60px] leading-2 font-semibold">
       Projects
     </h1>

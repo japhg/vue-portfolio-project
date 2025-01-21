@@ -49,6 +49,11 @@
       class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
     />
 
+    <NuxtIcon
+      v-else-if="props.icon.toLowerCase() == 'nuxt'"
+      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
+    />
+
     <div
       class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
     >
@@ -67,6 +72,7 @@ import PhpIcon from "../../icons/PhpIcon.vue";
 import GitIcon from "../../icons/GitIcon.vue";
 import MysqlIcon from "../../icons/MysqlIcon.vue";
 import CplusIcon from "../../icons/CplusIcon.vue";
+import NuxtIcon from "../../icons/NuxtIcon.vue";
 
 const props = defineProps<{
   website: string;
