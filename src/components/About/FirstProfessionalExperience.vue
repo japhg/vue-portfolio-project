@@ -1,11 +1,11 @@
 <template>
   <div class="text-secondary flex flex-col gap-5">
-    <h1 class="text-lg md:text-4xl text-center font-semibold">
-      First Professional Experience
+    <h1 class="text-lg md:text-3xl text-center font-light">
+      First Professional <span class="text-softGray">Experience</span>
     </h1>
 
     <p
-      class="text-secondary font-light text-sm md:text-[19px] tracking-wide leading-relaxed"
+      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
     >
       His foundation in PHP, gained during Capstone days, enabled him to
       effortlessly translate project requirements into robust and user-friendly
@@ -14,7 +14,7 @@
     </p>
 
     <p
-      class="text-secondary font-light text-sm md:text-[19px] tracking-wide leading-relaxed"
+      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
     >
       Notable projects include the creation of Room Reservation System with Push
       Notification, a Training Management System, and a Clinic Management

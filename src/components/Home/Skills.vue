@@ -1,7 +1,7 @@
 <template>
     <div class="w-full max-w-7xl flex flex-col gap-5">
-        <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-bold">
-            Skills / Technologies
+        <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light">
+            Skills / <span class="text-softGray">Technologies</span>
         </h1>
 
         <div

@@ -2,7 +2,7 @@
   <a
     :href="props.website"
     target="_blank"
-    class="bg-primary px-5 py-4 rounded-lg shadow-md hover:bg-yellow-600 relative group"
+    class="bg-white px-5 py-4 rounded-lg shadow-md hover:bg-secondary relative group"
   >
     <VueIcon
       v-if="props.icon.toLowerCase() == 'vue'"
@@ -57,7 +57,7 @@
     <div
       class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
     >
-      <span class="text-softWhite font-semibold px-3 text-center">{{ props.title }}</span>
+      <span class="text-white font-medium px-3 text-center">{{ props.title }}</span>
     </div>
   </a>
 </template>

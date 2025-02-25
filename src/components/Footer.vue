@@ -35,7 +35,7 @@
         </a>
     </div>
 
-    <div class="py-4 text-softBlack text-sm text-center">
+    <div class="py-4 text-secondary font-light text-sm text-center">
         <p>© {{ year }} MyPortfolio. All rights Reserved.</p>
     </div>
 </template>

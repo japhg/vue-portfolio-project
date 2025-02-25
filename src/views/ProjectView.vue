@@ -1,37 +1,42 @@
 <template>
   <div class="w-full h-full max-w-5xl my-20 flex flex-col gap-14 font-sans">
-    <h1 class="text-secondary text-2xl md:text-[60px] leading-2 font-semibold">
+    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light">
       Projects
     </h1>
 
     <div
-      class="grid lg:grid-cols-2 gap-x-10 md:gap-x-16 xl:gap-x-32 gap-y-12 md:gap-y-24 lg:gap-y-40 mb-auto md:mb-52"
+      class="grid lg:grid-cols-2 gap-x-10 md:gap-x-16 xl:gap-x-20 gap-y-12 md:gap-y-24 lg:gap-y-40 mb-auto md:mb-52"
     >
       <template v-for="(project, index) in projects">
         <div
-          class="bg-primary rounded-3xl shadow-md h-fit group hover:scale-[0.98] transition-all duration-150"
-          :class="index % 2 != 0 && 'lg:translate-y-72'"
+          class="bg-white rounded-3xl shadow-md h-full group hover:scale-[1.01] transition-all duration-150"
         >
-          <div class="p-4">
+          <div class="p-10">
             <img class="rounded-lg w-full" :src="project.img" />
           </div>
 
           <div class="flex flex-col gap-4 items-start px-10 pb-10">
             <h3
-              class="text-xl md:text-3xl font-semibold text-softBlack"
+              class="text-xl md:text-2xl font-bold text-secondary"
               v-html="project.title"
             />
 
-            <p class="text-left text-base md:text-xl text-softBlack leading-relaxed">
+            <p
+              class="text-left text-sm md:text-base font-light text-secondary leading-relaxed"
+            >
               {{ project.description }}
             </p>
 
             <a
               :href="project.url"
               target="_blank"
-              class="text-secondary border border-secondary px-10 py-4 rounded-xl font-light text-sm md:text-base"
-              >View Site</a
+              class="text-secondary border border-secondary px-5 py-3 mt-5 rounded-full font-light text-sm md:text-base hover:bg-secondary hover:text-white transition-colors"
             >
+              <span class="flex items-center gap-1 text-sm">
+                View Site
+                <ArrowUpRightIcon  class="w-3.5 h-3.5" />
+              </span>
+            </a>
           </div>
         </div>
       </template>
@@ -40,9 +45,11 @@
 </template>
 
 <script setup lang="ts">
+import ArrowUpRightIcon from '@/components/icons/ArrowUpRightIcon.vue';
+
 const projects = [
   {
-    url: "https://mtap.dev6.demosite.us/",
+    url: "https://mtapsystems.com/",
     img: "/images/projects/MTAP_Systems.png",
     title: "MTAP Systems",
     description:
@@ -51,14 +58,14 @@ const projects = [
   {
     url: "https://jobs.hrdpcnpromopro.com/index1.php",
     img: "/images/projects/PCN_Job_Portal.png",
-    title: "PCN Job Portal",
+    title: "Job Portal",
     description:
       "PCN Job Portal is an online platform that provides a space where applicants can search for job opportunities, apply for positions and manage their personal information.",
   },
   {
     url: "https://portal.hrdpcnpromopro.com/index1.php",
     img: "/images/projects/PCN_HMS.png",
-    title: "PCN - HRMS",
+    title: "Human Resource Management System",
     description:
       "PCN HRMS is designed to help company manage and automate various human resource (HR) department functions and processes. It serves as a centralized system that streamlines the management of employee information, recruitment, 201 files, training, and more.",
   },

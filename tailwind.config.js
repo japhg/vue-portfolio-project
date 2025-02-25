@@ -8,10 +8,13 @@ export default {
     colors: {
       ...colors,
       primary: {
-        DEFAULT: "#FFB200",
+        DEFAULT: "#F7F7F7",
       },
       secondary: {
-        DEFAULT: "#111827",
+        DEFAULT: "#1d1d1f",
+      },
+      softGray: {
+        DEFAULT: "#6e6e73",
       },
       softWhite: {
         DEFAULT: "#F8F9F9",

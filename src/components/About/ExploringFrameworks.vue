@@ -1,11 +1,11 @@
 <template>
   <div class="text-secondary flex flex-col gap-5">
-    <h1 class="text-lg md:text-4xl text-center font-semibold">
-      Exploring Frameworks
+    <h1 class="text-lg md:text-3xl text-center font-light">
+      Exploring <span class="text-softGray">Frameworks</span>
     </h1>
 
     <p
-      class="text-secondary font-light text-sm md:text-[19px] tracking-wide leading-relaxed"
+      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
     >
       Eager to expand his skill set, he embarked on a journey to master
       industry-leading frameworks such as Laravel, Vue.js, and Inertia.js.
@@ -18,7 +18,7 @@
     </p>
 
     <p
-      class="text-secondary font-light text-sm md:text-[19px] tracking-wide leading-relaxed"
+      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
     >
       Additionally, he became proficient in integrating front-end and back-end
       technologies seamlessly, further solidifying his expertise as a full-stack

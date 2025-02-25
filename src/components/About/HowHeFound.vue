@@ -1,11 +1,11 @@
 <template>
   <div class="text-secondary flex flex-col gap-5">
-    <h1 class="text-lg md:text-4xl text-center font-semibold">
-      How He Found His Passion for Web Development?
+    <h1 class="text-lg md:text-3xl text-center font-light">
+      How He Found His Passion for <span class="text-softGray">Web Development?</span>
     </h1>
 
     <p
-      class="text-secondary font-light text-sm md:text-[19px] tracking-wide leading-relaxed"
+      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
     >
       He began his journey in web development during his third year of college
       when one of his subjects, Project Management, required them to create a
@@ -14,7 +14,7 @@
     </p>
 
     <p
-      class="text-secondary font-light text-sm md:text-[19px] tracking-wide leading-relaxed"
+      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
     >
       During his fourth year of college, he was elected as the Lead Programmer
       of his cluster. His responsibilities included managing the programmers and

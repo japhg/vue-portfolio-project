@@ -25,8 +25,8 @@ const links = [
 <template>
   <div class="w-full flex justify-center items-center gap-10 font-sans">
     <div v-for="link in links" class="hidden md:block">
-      <RouterLink :to="link.url" class="text-lg font-medium">
-        <span class="text-lg font-medium">
+      <RouterLink :to="link.url" class="text-lg font-light">
+        <span class="text-lg font-light text-secondary">
           {{ link.title }}
         </span>
       </RouterLink>

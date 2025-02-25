@@ -1,17 +1,17 @@
 <template>
   <div class="w-full max-w-7xl flex flex-col gap-5">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-bold">
-      Work Experience
+    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light">
+      Work <span class="text-softGray">Experience</span>
     </h1>
 
     <div v-for="(experience, index) in experiences" :key="index" class="mt-6">
       <a
         :href="experience.companyWebsite"
         target="_blank"
-        class="text-softBlack text-xl md:text-2xl font-bold underline"
+        class="text-secondary text-xl md:text-2xl font-medium underline"
         >{{ experience.company }}</a
       >
-      <h6 class="text-secondary font-semibold text-[15px] md:text-base italic">
+      <h6 class="text-softGray font-medium text-[15px] md:text-base italic">
         {{ experience.subtitle }}
       </h6>
 
@@ -51,7 +51,7 @@ const experiences = [
       "September 2024 - March 2024 (Fullstack Web Developer / IT Support)",
     descriptions: [
       "As a former Fullstack PHP Developer at PCN Promopro Inc., I played a role in the development and implementation of various systems aimed at enhancing organizational efficiency.",
-      "Notable projects include the creation of Room Reservation System with Push Notification, a Training Management System, and a Clinic Management System. However, my biggest contribution was the desing and development of the Human Resource Management System, which enhanced the internal process and significantly improved workflow efficiency of Human Resource Department.",
+      "Notable projects include the creation of Room Reservation System with Push Notification, a Training Management System, and a Clinic Management System. However, my biggest contribution was the design and development of the Human Resource Management System, which enhanced the internal process and significantly improved workflow efficiency of Human Resource Department.",
     ],
   },
 ];
