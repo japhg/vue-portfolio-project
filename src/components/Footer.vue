@@ -30,8 +30,8 @@
             <TelegramIcon class="w-6 md:w-8 h-6 md:h-8" />
         </a>
 
-        <a href="mailto:jpgomera19@gmail.com" target="_blank">
-            <GoogleIcon class="w-6 md:w-8 h-6 md:h-8" />
+        <a href="https://vb.me/letsChatOnViber" target="_blank">
+            <ViberIcon class="w-6 md:w-8 h-6 md:h-8" />
         </a>
     </div>
 
@@ -45,7 +45,7 @@ import GithubIcon from "./icons/GithubIcon.vue";
 import LinkedinIcon from "./icons/LinkedinIcon.vue";
 import TelegramIcon from "./icons/TelegramIcon.vue";
 import UpworkIcon from "./icons/UpworkIcon.vue";
-import GoogleIcon from "./icons/GoogleIcon.vue";
+import ViberIcon from "./icons/ViberIcon.vue";
 
 const year = new Date().getFullYear();
 </script>
