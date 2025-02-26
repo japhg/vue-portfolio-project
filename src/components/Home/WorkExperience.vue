@@ -33,7 +33,7 @@ const experiences = [
     companyWebsite: "#",
     subtitle: "March 2024 - Present (Fullstack Web Developer)",
     descriptions: [
-      "A freelance developer who is part of a team developing <strong>MTAP Systems:</strong> An online patient reported functional outcome questionnaire that  identifies specific functional limitations and the general effect of functional limitations on a person's ability to work, provide self-care in activities of daily living, and participate in other home and community activities.",
+      "A freelance fullstack web developer who is part of a team: <ul role=\"list\" class=\"list-disc pl-8 \"><li>Developed <span class=\"text-secondary font-semibold\">MTAP Systems</></li><li>Developed <span class=\"text-secondary font-semibold\">TheCEplace</span></li><li>Worked on <span class=\"text-secondary font-semibold\">QuickJuan POS</span> (development postponed to focus on other projects)</li><li>Developed <span class=\"text-secondary font-semibold\">UpMe</span> website land page</li></ul>",
     ],
   },
   {
@@ -41,7 +41,7 @@ const experiences = [
     companyWebsite: "https://www.upwork.com/freelancers/~0134531ce6db4c80f1",
     subtitle: "March 2024 - May 2024 (Web Developer)",
     descriptions: [
-      "A freelance contract where I become part of the team developing a website called <strong>Swingfox</strong>: A dating site dedicated to celebrating fun and sexual exploration in all of its diverse forms.",
+      "A freelance contract where I become part of the team developing a website called <span class=\"text-secondary font-semibold\">Swingfox</span>: A dating site dedicated to celebrating fun and sexual exploration in all of its diverse forms.",
     ],
   },
   {
@@ -50,8 +50,9 @@ const experiences = [
     subtitle:
       "September 2024 - March 2024 (Fullstack Web Developer / IT Support)",
     descriptions: [
-      "As a former Fullstack PHP Developer at PCN Promopro Inc., I played a role in the development and implementation of various systems aimed at enhancing organizational efficiency.",
-      "Notable projects include the creation of Room Reservation System with Push Notification, a Training Management System, and a Clinic Management System. However, my biggest contribution was the design and development of the Human Resource Management System, which enhanced the internal process and significantly improved workflow efficiency of Human Resource Department.",
+      "As a former <span class=\"text-secondary font-semibold\">Full-Stack PHP Developer</span> at <span class=\"text-secondary font-semibold\">PCN Promopro Inc.</span>, I played a key role in developing and implementing various systems to enhance organizational efficiency.",
+      "<span class=\"text-secondary font-semibold\">Notable projects:</span><ul role=\"list\" class=\"list-disc pl-8 \"><li><span class=\"text-secondary font-semibold\">Room Reservation System</span> with Push Notification</li><li><span class=\"text-secondary font-semibold\">Training Management System</span></li><li><span class=\"text-secondary font-semibold\">Clinic Management System</span></li><li><span class=\"text-secondary font-semibold\">Human Resource Management System (HRMS)</span> – My most significant contribution, improving internal processes and significantly enhancing workflow efficiency in the HR department.</li></ul>",
+      "<span class=\"text-secondary font-semibold\">Additional Contributions:</span><ul role=\"list\" class=\"list-disc pl-8 \"><li>Developed a <span class=\"text-secondary font-semibold\">custom system</span> tailored to the company’s needs.</li><li>Enhanced <span class=\"text-secondary font-semibold\">user experience</span> by implementing <span class=\"text-secondary font-semibold\">responsive web design</span> and optimizing website performance.</li><li><span class=\"text-secondary font-semibold\">Resolved technical issues</span> promptly, ensuring minimal disruption to website functionality and user satisfaction.</li><li>Provided <span class=\"text-secondary font-semibold\">technical support</span> to employees, ensuring smooth system operations.</li></ul>",
     ],
   },
 ];
