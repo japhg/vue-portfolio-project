@@ -1,6 +1,6 @@
 <template>
   <div class="text-secondary flex flex-col gap-5">
-    <h1 class="text-lg md:text-3xl text-center font-light">
+    <h1 class="text-lg md:text-3xl text-center font-light animate__animated animate__fadeInUp">
       First Professional <span class="text-softGray">Experience</span>
     </h1>
 
