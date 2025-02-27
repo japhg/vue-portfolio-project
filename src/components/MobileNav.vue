@@ -27,7 +27,7 @@ const links = [
     class="md:hidden w-full h-fit py-2 inset-0 bg-primary flex flex-col justify-center items-center gap-4"
   >
     <template v-for="link in links">
-      <RouterLink v-if="link.url != null" :to="link.url" class="my-2 font-medium">
+      <RouterLink v-if="link.url != null" :to="link.url" class="my-1 leading-5 font-light">
         {{ link.title }}
       </RouterLink>
     </template>
