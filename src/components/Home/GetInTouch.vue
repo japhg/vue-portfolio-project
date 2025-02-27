@@ -4,11 +4,15 @@ import EnvelopeIcon from "../icons/EnvelopeIcon.vue";
 
 <template>
   <div class="w-full max-w-7xl flex flex-col text-center gap-5">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light">
+    <h1
+      class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__bounce animate__repeat-3"
+    >
       Get <span class="text-softGray">in touch</span>
     </h1>
 
-    <p class="text-secondary font-light text-sm md:text-base tracking-wide">
+    <p
+      class="text-secondary font-light text-sm md:text-base tracking-wide animate__animated animate__fadeInUp"
+    >
       Feel free to reach out if you have any questions, ideas, or opportunities
       you'd like to discuss. I'm always open to new collaborations and would
       love to hear from you. Get in touch, and let's connect!
@@ -20,7 +24,7 @@ import EnvelopeIcon from "../icons/EnvelopeIcon.vue";
         target="_blank"
         class="text-secondary border border-secondary px-5 py-3 rounded-full font-light text-sm md:text-base hover:bg-secondary hover:text-white transition-colors"
       >
-          Send an email 
+        Send an email
       </a>
     </div>
   </div>

@@ -5,7 +5,7 @@
         </h1>
 
         <div
-            class="flex flex-wrap flex-row justify-center items-center gap-4 mt-4"
+            class="flex flex-wrap flex-row justify-center items-center gap-4 mt-4 animate__animated animate__fadeInRight animate__delay-.8s"
         >
             <SkillSet website="https://vuejs.org/" icon="vue" title="Vue.js" />
             <SkillSet website="https://inertiajs.com/" icon="inertia" title="Inertia.js" />

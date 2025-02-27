@@ -1,6 +1,6 @@
 <template>
   <div class="text-secondary flex flex-col gap-5">
-    <h1 class="text-lg md:text-3xl text-center font-light">
+    <h1 class="text-lg md:text-3xl text-center font-light animate__animated animate__fadeInUp">
       How He Found His Passion for <span class="text-softGray">Web Development?</span>
     </h1>
 

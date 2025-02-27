@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-full max-w-5xl my-20 flex flex-col gap-14 font-sans">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light">
+    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__fadeInUp">
       Projects
     </h1>
 
