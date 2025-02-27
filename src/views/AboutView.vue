@@ -1,6 +1,6 @@
 <template>
   <div class="w-full max-w-5xl my-20 flex flex-col gap-14">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light">
+    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__fadeInUp">
       About <span class="text-softGray">Me</span>
     </h1>
 
