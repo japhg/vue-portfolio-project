@@ -2,7 +2,7 @@
   <div class="w-full max-w-7xl flex flex-col text-start items-start">
     <div class="relative w-auto">
       <h1
-        class="typewriter text-mediumGray text-2xl md:text-[40px] leading-snug font-light"
+        class="typewriter text-mediumGray text-xl md:text-[40px] leading-snug font-light"
       >
         Hello. I am James Philip Gomera
       </h1>
@@ -10,7 +10,7 @@
 
     <div>
       <p
-        class="text-secondary text-2xl md:text-[40px] font-light leading-relaxed md:leading-tight"
+        class="text-secondary text-xl md:text-[40px] font-light leading-relaxed md:leading-tight"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -28,7 +28,7 @@
           class="text-secondary border border-softGray px-5 py-2 rounded-md font-medium text-xs hover:bg-secondary hover:text-white transition-colors"
         >
           <span class="flex items-center gap-1 uppercase">
-            View Works
+            View My Works
             <ArrowUpRightIcon class="w-3.5 h-3.5" />
           </span>
         </button>
