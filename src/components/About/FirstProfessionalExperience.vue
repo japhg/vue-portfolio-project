@@ -1,27 +1,34 @@
+<script setup lang="ts">
+import StarIcon from '../icons/StarIcon.vue';
+
+</script>
+
 <template>
   <div class="text-secondary flex flex-col gap-5">
-    <h1 class="text-lg md:text-3xl text-center font-light animate__animated animate__fadeInUp">
+    <h1
+      class="flex gap-2 items-center text-lg md:text-2xl uppercase font-medium"
+    >
+      <StarIcon class="w-5 h-5" />
       First Professional <span class="text-softGray">Experience</span>
     </h1>
 
-    <p
-      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
-    >
-      His foundation in PHP, gained during Capstone days, enabled him to
-      effortlessly translate project requirements into robust and user-friendly
-      solutions. Leveraging this expertise, he consistently delivered
-      high-quality outputs that aligned with company expectations.
+    <p class="text-secondary text-sm md:text-lg tracking-wider leading-loose">
+      Thanks to strong fundamentals in PHP and solid capstone projects, I was
+      able to translate ideas into working, user-friendly solutions. I worked
+      on:
     </p>
 
-    <p
-      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
+    <ul
+      class="list-item list-disc ml-10 text-secondary text-sm md:text-lg tracking-wider leading-loose"
     >
-      Notable projects include the creation of Room Reservation System with Push
-      Notification, a Training Management System, and a Clinic Management
-      System. However, his biggest contribution was the design and development
-      of the Human Resource Management System, which enhanced the internal
-      process and significantly improved workflow efficiency of Human Resource
-      Department.
+      <li>Room Reservation System with push notifications</li>
+      <li>Clinic Management System</li>
+      <li>A full Training Management System</li>
+    </ul>
+
+    <p class="text-secondary text-sm md:text-lg tracking-wider leading-loose">
+      But my biggest impact? Leading the development of the HR Management
+      System, which streamlined internal processes and boosted efficiency.
     </p>
   </div>
 </template>

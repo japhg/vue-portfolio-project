@@ -8,10 +8,10 @@ export default {
     colors: {
       ...colors,
       primary: {
-        DEFAULT: "#F7F7F7",
+        DEFAULT: "#e9e9e9",
       },
       secondary: {
-        DEFAULT: "#1d1d1f",
+        DEFAULT: "#32322e",
       },
       softGray: {
         DEFAULT: "#6e6e73",
@@ -22,10 +22,16 @@ export default {
       softBlack: {
         DEFAULT: "#17252A",
       },
+      lightGray: {
+        DEFAULT: "#dddcda"
+      },
+      mediumGray: {
+        DEFAULT: "#aaa9a3"
+      }
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", 'sans-serif'],
         archivo: ["Archivo"],
         poppins: ["Poppins"],
         roboto: ["Roboto"],

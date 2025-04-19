@@ -2,7 +2,7 @@
   <a
     :href="props.website"
     target="_blank"
-    class="bg-white px-5 py-4 rounded-lg shadow-md hover:bg-secondary relative group"
+    class="bg-lightGray px-5 py-4 rounded-lg shadow-md hover:bg-secondary relative group"
   >
     <VueIcon
       v-if="props.icon.toLowerCase() == 'vue'"

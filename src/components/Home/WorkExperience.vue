@@ -1,35 +1,44 @@
 <template>
-  <div class="w-full max-w-7xl flex flex-col gap-5">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__fadeInUp">
+  <div class="w-full flex flex-col gap-5">
+    <h1
+      class="text-secondary text-2xl md:text-5xl leading-2 font-light"
+    >
       Work <span class="text-softGray">Experience</span>
     </h1>
 
-    <div v-for="(experience, index) in experiences" :key="index" class="mt-6">
-      <a
-        :href="experience.companyWebsite"
-        target="_blank"
-        class="flex gap-2 items-center text-secondary text-xl md:text-2xl font-medium hover:underline"
+    <div class="flex flex-col items-center gap-5">
+      <div
+        v-for="(experience, index) in experiences"
+        :key="index"
+        class="mt-6 p-10 bg-lightGray rounded-lg shadow-md w-full max-w-3xl"
+        data-aos="fade-right"
+        data-aos-duration="800"
       >
-        {{ experience.company }}
-        <LinkIcon class="w-4 h-4" />
-      </a>
-      <h6 class="text-softGray font-medium text-[15px] md:text-base italic">
-        {{ experience.subtitle }}
-      </h6>
+        <a
+          :href="experience.companyWebsite"
+          target="_blank"
+          class="flex gap-2 items-center text-secondary text-xl md:text-2xl font-medium hover:underline"
+        >
+          {{ experience.company }}
+          <LinkIcon class="w-4 h-4" />
+        </a>
+        <h6 class="text-softGray font-medium text-[15px] md:text-xl">
+          {{ experience.subtitle }}
+        </h6>
 
-      <p
-        v-for="description in experience.descriptions"
-        class="text-secondary text-sm md:text-base font-light mt-5 tracking-wide"
-      >
-        <span v-html="description" />
-      </p>
-      <hr class="border-softBlack mt-10" />
+        <p
+          v-for="description in experience.descriptions"
+          class="text-secondary text-sm md:text-lg mt-5 tracking-wider"
+        >
+          <span v-html="description" />
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import LinkIcon from '../icons/LinkIcon.vue';
+import LinkIcon from "../icons/LinkIcon.vue";
 
 const experiences = [
   {

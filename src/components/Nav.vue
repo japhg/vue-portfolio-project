@@ -1,46 +1,35 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
-import { ref } from "vue";
-import MenuIcon from "./icons/MenuIcon.vue";
-import XMarkIcon from "./icons/XMarkIcon.vue";
-import MobileNav from "./MobileNav.vue";
+import StarIcon from "./icons/StarIcon.vue";
 
-const displayMenu = ref(false);
 const links = [
   {
-    title: "Home",
-    url: "/",
-  },
-  {
     title: "About",
-    url: "/about",
+    url: "#about",
   },
   {
-    title: "Projects",
-    url: "/project",
+    title: "Project",
+    url: "#project",
   },
 ];
 </script>
 
 <template>
-  <div class="w-full flex justify-center items-center gap-10 font-sans">
-    <div v-for="link in links" class="hidden md:block">
-      <RouterLink :to="link.url" class="text-lg font-light">
-        <span class="text-lg font-light text-secondary">
-          {{ link.title }}
-        </span>
-      </RouterLink>
+  <div
+    class="w-full flex flex-row justify-between items-center gap-10 mt-5 px-10"
+  >
+    <RouterLink to="/" class="flex items-center gap-2">
+      <StarIcon />
+      <span class="font-semibold">Jph<i>i</i> </span>
+    </RouterLink>
+    <div class="flex gap-5">
+      <div v-for="link in links">
+        <a :href="link.url" class="text-lg font-light px-5">
+          <span class="text-base md:text-lg font-light text-softGray">
+            {{ link.title }}
+          </span>
+        </a>
+      </div>
     </div>
   </div>
-
-  <div class="w-full flex justify-end items-center gap-10 font-sans">
-    <div class="block md:hidden">
-      <button @click="displayMenu = !displayMenu" class="z-50 lg:hidden">
-        <MenuIcon v-if="!displayMenu" />
-        <XMarkIcon v-else />
-      </button>
-    </div>
-  </div>
-
-  <MobileNav :show="displayMenu" />
 </template>
