@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <h4 class="text-xl font-semibold text-center">Social Links:</h4>
+        <h4 class="text-xl font-medium text-center">Social <span class="text-softGray">Links:</span></h4>
     </div>
 
     <div class="flex flex-wrap items-center gap-3 mt-3">
@@ -36,7 +36,7 @@
     </div>
 
     <div class="py-4 text-secondary font-light text-sm text-center">
-        <p>© {{ year }} MyPortfolio. All rights Reserved.</p>
+        <p>© {{ year }} Jph<i>i</i> Portfolio. All rights Reserved.</p>
     </div>
 </template>
 <script setup lang="ts">

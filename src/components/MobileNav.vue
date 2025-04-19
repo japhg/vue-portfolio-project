@@ -7,16 +7,12 @@ const props = defineProps<{
 
 const links = [
   {
-    title: "Home",
-    url: "/",
-  },
-  {
     title: "About",
-    url: "/about",
+    url: "#about",
   },
   {
     title: "Projects",
-    url: "/project",
+    url: "#project",
   },
 ];
 </script>
@@ -27,9 +23,13 @@ const links = [
     class="md:hidden w-full h-fit py-2 inset-0 bg-primary flex flex-col justify-center items-center gap-4"
   >
     <template v-for="link in links">
-      <RouterLink v-if="link.url != null" :to="link.url" class="my-1 leading-5 font-light">
+      <a
+        v-if="link.url != null"
+        :href="link.url"
+        class="my-1 leading-5 font-light"
+      >
         {{ link.title }}
-      </RouterLink>
+      </a>
     </template>
   </div>
 </template>

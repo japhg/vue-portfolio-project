@@ -1,38 +1,38 @@
 <template>
-  <div
-    class="w-full max-w-7xl flex justify-center text-center items-start flex-col gap-2"
-  >
-    <div class="relative w-full mb-0 md:mb-3">
-      <h1 class="text-secondary text-4xl md:text-[83px] leading-snug font-light animate__animated animate__fadeInUp animate__delay-.8s">
-        JAMES PHILIP <span class="text-softGray">GOMERA</span>
+  <div class="w-full max-w-7xl flex flex-col text-start items-start">
+    <div class="relative w-auto">
+      <h1
+        class="typewriter text-mediumGray text-2xl md:text-[40px] leading-snug font-light"
+      >
+        Hello. I am James Philip Gomera
       </h1>
     </div>
 
     <div>
       <p
-        class="text-secondary text-sm md:text-lg font-light leading-relaxed animate__animated animate__fadeInUp animate__delay-.8s"
+        class="text-secondary text-2xl md:text-[40px] font-light leading-relaxed md:leading-tight"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
-        A
-        <strong class="font-bold text-secondary"
-          >Full-Stack Web Developer</strong
-        >
+        I'm a
+        <span class="text-softGray">Full-Stack Web Developer</span>
         with strong expertise in both front-end and back-end technologies.
         Experienced in building dynamic, responsive, and user-friendly web
         applications using modern frameworks.
       </p>
     </div>
 
-    <div class="mt-6 w-full">
-      <RouterLink to="/about" class="">
+    <div class="mt-6 w-full" data-aos="fade-up" data-aos-duration="1000">
+      <a href="#project" class="">
         <button
-          class="text-secondary border border-secondary px-5 py-3 rounded-full font-light text-sm md:text-base hover:bg-secondary hover:text-white transition-colors animate__animated animate__fadeInUp animate__delay-.8s"
+          class="text-secondary border border-softGray px-5 py-2 rounded-md font-medium text-xs hover:bg-secondary hover:text-white transition-colors"
         >
-          <span class="flex items-center gap-1">
-            About more
+          <span class="flex items-center gap-1 uppercase">
+            View Works
             <ArrowUpRightIcon class="w-3.5 h-3.5" />
           </span>
         </button>
-      </RouterLink>
+      </a>
     </div>
   </div>
 </template>
@@ -40,3 +40,31 @@
 <script setup lang="ts">
 import ArrowUpRightIcon from "../icons/ArrowUpRightIcon.vue";
 </script>
+<style>
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid #999;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+  width: fit-content;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #999;
+  }
+}
+</style>

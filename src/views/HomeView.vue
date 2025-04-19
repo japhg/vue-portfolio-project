@@ -1,27 +1,33 @@
 <template>
-  <div class="w-full max-w-2xl px-6 lg:max-w-7xl">
-    <main>
-      <section class="flex items-center h-screen">
-        <div class="flex flex-wrap justify-center items-center gap-10">
+  <div class="w-full max-w-[1480px]">
+    <main class="flex flex-col gap-10">
+      <section class="flex justify-center items-center h-screen px-5">
+        <div class="flex flex-col justify-center items-center gap-10">
           <Home />
+          <div></div>
         </div>
       </section>
 
-      <section class="h-full mb-28">
-        <div class="w-full flex justify-center items-center">
+      <section class="flex h-full mb-20 px-5" id="about">
+        <div class="flex flex-col">
+          <About />
           <Skills />
         </div>
       </section>
 
-      <section class="h-full">
-        <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
-          <div class="w-full flex justify-center items-center">
-            <WorkExperience />
-          </div>
+      <section class="h-full px-5">
+        <div class="w-full flex justify-center items-center">
+          <WorkExperience />
         </div>
       </section>
 
-      <section class="h-fit my-28">
+      <section class="h-full px-5" id="project">
+        <div class="w-full flex justify-center items-center">
+          <Projects />
+        </div>
+      </section>
+
+      <section class="h-fit my-28 px-5">
         <GetInTouch />
       </section>
 
@@ -30,8 +36,10 @@
   </div>
 </template>
 <script setup lang="ts">
+import About from "@/components/Home/About.vue";
 import GetInTouch from "@/components/Home/GetInTouch.vue";
 import Home from "@/components/Home/Home.vue";
+import Projects from "@/components/Home/Projects.vue";
 import Skills from "@/components/Home/Skills.vue";
 import WorkExperience from "@/components/Home/WorkExperience.vue";
 </script>
