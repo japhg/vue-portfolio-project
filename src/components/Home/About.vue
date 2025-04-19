@@ -17,7 +17,7 @@ import HowHeFound from '../About/HowHeFound.vue';
       class="text-secondary text-sm md:text-lg tracking-wider leading-loose"
     >
       I am a full-stack web
-      developer who currently based in the Philippines. He graduated with a
+      developer who currently based in the Philippines. I graduated with a
       Bachelor’s degree in Information Technology, majoring in Information
       Management, from Bestlink College of the Philippines.
     </p>

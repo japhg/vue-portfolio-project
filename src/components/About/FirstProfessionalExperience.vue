@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import StarIcon from '../icons/StarIcon.vue';
-
+import StarIcon from "../icons/StarIcon.vue";
 </script>
 
 <template>
@@ -9,7 +8,7 @@ import StarIcon from '../icons/StarIcon.vue';
       class="flex gap-2 items-center text-lg md:text-2xl uppercase font-medium"
     >
       <StarIcon class="w-5 h-5" />
-      First Professional <span class="text-softGray">Experience</span>
+      <p>First Professional <span class="text-softGray">Experience</span></p>
     </h1>
 
     <p class="text-secondary text-sm md:text-lg tracking-wider leading-loose">
