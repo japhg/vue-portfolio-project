@@ -11,7 +11,7 @@
         :numScroll="1"
         orientation="horizontal"
         containerClass="w-full"
-        :showNavigators="true"
+        :showNavigators="false"
         :autoplayInterval="5000"
         circular
       >

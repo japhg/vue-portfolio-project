@@ -20,7 +20,7 @@ const links = [
   >
     <RouterLink to="/" class="flex items-center gap-2">
       <StarIcon />
-      <span class="font-semibold">Jph<i>i</i> </span>
+      <span class="font-semibold text-secondary">Jph<i>i</i> </span>
     </RouterLink>
     <div class="flex gap-5">
       <div v-for="link in links">
