@@ -8,7 +8,7 @@ import StarIcon from "../icons/StarIcon.vue";
       class="flex gap-2 items-center text-lg md:text-2xl uppercase font-medium"
     >
       <StarIcon class="w-5 h-5" />
-      <p>My Journey Into <span class="text-softGray">Web Development?</span></p>
+      <p>My Journey Into <span class="text-softGray">Web Development</span></p>
     </h1>
 
     <p class="text-secondary text-sm md:text-lg tracking-wider leading-loose">
