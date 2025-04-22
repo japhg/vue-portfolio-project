@@ -10,7 +10,7 @@
       <div
         v-for="(experience, index) in experiences"
         :key="index"
-        class="mt-6 p-10 bg-lightGray rounded-lg shadow-md w-full max-w-3xl"
+        class="mt-6 p-10 bg-gray-100 rounded-lg shadow-md w-full max-w-3xl"
         data-aos="fade-right"
         data-aos-duration="800"
       >
