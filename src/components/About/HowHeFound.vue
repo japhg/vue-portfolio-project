@@ -12,7 +12,7 @@ import StarIcon from "../icons/StarIcon.vue";
     </h1>
 
     <p class="text-secondary text-sm md:text-lg tracking-wider leading-loose">
-      I discovered my passion for coding in college when I was tasked with
+      I discovered my passion for coding in college when I was assigned with
       building a simple web system for a class project. That project turned into
       something bigger: a full Student Information System — and I was hooked.
     </p>

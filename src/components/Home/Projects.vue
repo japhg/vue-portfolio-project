@@ -17,7 +17,7 @@
       >
         <template #item="slotProps">
           <div
-            class="flex flex-col w-full max-w-4xl mx-auto bg-lightGray rounded-xl overflow-hidden shadow-lg p-5"
+            class="flex flex-col w-full max-w-4xl mx-auto bg-gray-200 rounded-xl overflow-hidden shadow-lg p-5"
           >
             <!-- Image -->
             <img
@@ -27,9 +27,11 @@
             />
 
             <!-- Content -->
-            <div class="space-y-4 text-center md:text-left">
-              <h1
-                class="text-xl md:text-3xl font-bold text-secondary"
+            <div class="space-y-4 text-center md:text-left mx-10">
+              <a
+                :href="slotProps.data.url"
+                class="text-xl md:text-3xl font-bold text-secondary hover:underline"
+                target="_blank"
                 v-html="slotProps.data.title"
               />
               <p
@@ -60,6 +62,13 @@
 import { Carousel } from "primevue";
 
 const projects = [
+  {
+    url: "https://upmeworks.com/",
+    img: "/images/projects/UpmeWorks.png",
+    title: "UpmeWorks",
+    description:
+      "is a business software that simply works for various industries. Our solutions seamlessly combine ready-to-use features with the flexibility of customization.",
+  },
   {
     url: "https://mtapsystems.com/",
     img: "/images/projects/MTAP_Systems.png",
