@@ -10,7 +10,7 @@
     </transition-group>
 
     <!-- Controls (optional) -->
-    <div class="flex justify-center mt-10 gap-2">
+    <div class="flex justify-center mt-10 pt-10 gap-2">
       <span
         v-for="(quote, index) in quotes"
         :key="index"
@@ -40,7 +40,7 @@ let interval: any | null = null;
 onMounted(() => {
   interval = setInterval(() => {
     currentIndex.value = (currentIndex.value + 1) % quotes.length;
-  }, 5000); // 5 seconds
+  }, 5000); 
 });
 
 onUnmounted(() => {
