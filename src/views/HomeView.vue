@@ -9,7 +9,7 @@
       </section>
 
       <section class="flex justify-center items-center px-5">
-          <UserQuote />
+        <UserQuote />
       </section>
 
       <section class="flex h-full mb-20 px-5" id="about">
