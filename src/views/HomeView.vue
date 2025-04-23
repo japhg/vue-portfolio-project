@@ -9,7 +9,7 @@
       </section>
 
       <section class="flex justify-center items-center px-5">
-          <Quotes />
+          <UserQuote />
       </section>
 
       <section class="flex h-full mb-20 px-5" id="about">
@@ -44,7 +44,7 @@ import About from "@/components/Home/About.vue";
 import GetInTouch from "@/components/Home/GetInTouch.vue";
 import Home from "@/components/Home/Home.vue";
 import Projects from "@/components/Home/Projects.vue";
-import Quotes from "@/components/Home/Quotes.vue";
 import Skills from "@/components/Home/Skills.vue";
+import UserQuote from "@/components/Home/UserQuote.vue";
 import WorkExperience from "@/components/Home/WorkExperience.vue";
 </script>
