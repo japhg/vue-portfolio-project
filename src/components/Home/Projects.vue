@@ -17,7 +17,7 @@
       >
         <template #item="slotProps">
           <div
-            class="flex flex-col w-full max-w-4xl mx-auto bg-gray-200 rounded-xl overflow-hidden shadow-lg p-5"
+            class="flex flex-col w-full max-w-4xl mx-auto bg-gray-100 rounded-xl overflow-hidden shadow-lg p-5"
           >
             <!-- Image -->
             <img
