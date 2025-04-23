@@ -39,7 +39,7 @@
     </main>
   </div>
 </template>
-<script setup lang="ts">
+<script setup>
 import About from "@/components/Home/About.vue";
 import GetInTouch from "@/components/Home/GetInTouch.vue";
 import Home from "@/components/Home/Home.vue";
