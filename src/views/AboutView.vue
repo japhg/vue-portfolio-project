@@ -1,37 +1,34 @@
 <template>
-  <div class="w-full max-w-5xl my-20 flex flex-col gap-14">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__fadeInUp">
-      About <span class="text-softGray">Me</span>
-    </h1>
+  <main>
+    <div class="w-full max-w-5xl my-20 flex flex-col gap-14">
+      <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__fadeInUp">
+        About <span class="text-accent">Me</span>
+      </h1>
 
-    <p
-      class="text-secondary font-light text-sm md:text-base tracking-wide leading-relaxed"
-    >
-      <strong class="font-bold">James Philip Gomera</strong> is a full-stack web
-      developer who currently based in the Philippines. He graduated with a
-      Bachelor’s degree in Information Technology, majoring in Information
-      Management, from Bestlink College of the Philippines.
-    </p>
+      <p
+        class="text-muted font-light text-sm md:text-base tracking-wide leading-relaxed"
+      >
+        <strong class="font-bold text-secondary">James Philip Gomera</strong> is a full-stack web
+        developer who currently based in the Philippines. He graduated with a
+        Bachelor's degree in Information Technology, majoring in Information
+        Management, from Bestlink College of the Philippines.
+      </p>
 
-    <HowHeFound />
+      <HowHeFound />
 
-    <FirstProfessionalExperience />
+      <FirstProfessionalExperience />
 
-    <ExploringFrameworks />
+      <ExploringFrameworks />
 
-    <div class="mt-6">
-      <RouterLink to="/">
-        <button
-          class="text-secondary border border-secondary px-5 py-3 mt-5 rounded-full font-light text-sm md:text-base hover:bg-secondary hover:text-white transition-colors"
-        >
-          <span class="flex items-center gap-1 text-sm">
-            <ArrowUpLeftIcon class="w-3 h-3" />
-            Back to Home
-          </span>
-        </button>
-      </RouterLink>
+      <a
+        href="/"
+        class="text-accent border border-accent px-5 py-3 mt-5 rounded-full font-light text-sm md:text-base hover:bg-accent/10 transition-colors self-start"
+      >
+        Back to Home
+      </a>
     </div>
-  </div>
+    <Footer />
+  </main>
 </template>
 
 <script setup lang="ts">

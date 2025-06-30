@@ -8,28 +8,25 @@ export default {
     colors: {
       ...colors,
       primary: {
-        DEFAULT: "#f5f5f7",
+        DEFAULT: "#0A192F",
       },
       secondary: {
-        DEFAULT: "#32322e",
+        DEFAULT: "#CCD6F6",
       },
-      softGray: {
-        DEFAULT: "#6e6e73",
+      accent: {
+        DEFAULT: "#64FFDA",
       },
-      softWhite: {
-        DEFAULT: "#F8F9F9",
+      highlight: {
+        DEFAULT: "#112240",
       },
-      softBlack: {
-        DEFAULT: "#17252A",
+      muted: {
+        DEFAULT: "#8892B0",
       },
-      lightGray: {
-        DEFAULT: "#dddcda"
-      },
-      mediumGray: {
-        DEFAULT: "#aaa9a3"
-      }
     },
     extend: {
+      backgroundImage: {
+        'gradient-primary': "url('/images/gradient.png')"
+      },
       fontFamily: {
         sans: ["Inter", 'sans-serif'],
         archivo: ["Archivo"],

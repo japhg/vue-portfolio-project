@@ -3,31 +3,46 @@ import StarIcon from "../icons/StarIcon.vue";
 </script>
 
 <template>
-  <div class="text-secondary flex flex-col gap-5">
-    <h1
-      class="flex gap-2 items-center text-lg md:text-2xl uppercase font-medium"
-    >
-      <StarIcon class="w-5 h-5" />
-      <p>First Professional <span class="text-softGray">Experience</span></p>
-    </h1>
-
-    <p class="text-secondary text-sm md:text-lg tracking-wider leading-loose">
-      Thanks to strong fundamentals in PHP and solid capstone projects, I was
-      able to translate ideas into working, user-friendly solutions. I worked
-      on:
-    </p>
-
-    <ul
-      class="list-item list-disc ml-10 text-secondary text-sm md:text-lg tracking-wider leading-loose"
-    >
-      <li>Room Reservation System with push notifications</li>
-      <li>Clinic Management System</li>
-      <li>A full Training Management System</li>
-    </ul>
-
-    <p class="text-secondary text-sm md:text-lg tracking-wider leading-loose">
-      But my biggest impact? Leading the development of the HR Management
-      System, which streamlined internal processes and boosted efficiency.
-    </p>
+  <div class="w-full h-full flex items-center justify-between">
+    <div class="flex items-center gap-10">
+      <div class="text-secondary flex flex-col gap-5">
+        <div class="flex gap-3 items-center">
+          <StarIcon class="w-5 h-5 text-accent" />
+          <h1 class="flex flex-col text-4xl font-light w-full">
+            First Professional <span class="text-muted">Experience</span>
+          </h1>
+        </div>
+        <div class="flex flex-col gap-5">
+          <p class="text-muted text-sm md:text-lg">
+            My first role as a Full-Stack Web Developer at PCN Promopro Inc. was
+            a game-changer. I was part of a team that built systems to improve
+            the company's operations. I contributed to several key projects,
+            including:
+          </p>
+          <ul class="flex flex-col gap-2">
+            <li
+              class="list-item list-disc ml-10 text-muted text-sm md:text-lg"
+            >
+              A Room Reservation System with real-time push notifications
+            </li>
+            <li
+              class="list-item list-disc ml-10 text-muted text-sm md:text-lg"
+            >
+              A comprehensive Training Management System
+            </li>
+            <li
+              class="list-item list-disc ml-10 text-muted text-sm md:text-lg"
+            >
+              An efficient Clinic Management System
+            </li>
+          </ul>
+          <p class="text-muted text-sm md:text-lg">
+            My most significant contribution was leading the development of the
+            Human Resource Management System (HRMS), which streamlined
+            everything from hiring to employee management.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
