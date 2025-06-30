@@ -1,66 +1,43 @@
 <template>
-  <div class="w-full h-full my-20 flex flex-col gap-14 font-sans">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light">
-      Projects
+  <div class="w-full max-w-5xl flex flex-col gap-10">
+    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light text-center">
+      My <span class="text-accent">Projects</span>
     </h1>
-
-    <div>
-      <Carousel
-        :value="projects"
-        :numVisible="1"
-        :numScroll="1"
-        orientation="horizontal"
-        containerClass="w-full"
-        :showNavigators="false"
-        :autoplayInterval="5000"
-        circular
+    <div
+      v-for="(project, index) in projects"
+      :key="index"
+      class="w-full grid md:grid-cols-2 gap-10 items-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="w-full h-72 rounded-lg"
+        :class="index % 2 === 0 ? 'md:order-1' : 'md:order-2'"
       >
-        <template #item="slotProps">
-          <div
-            class="flex flex-col w-full max-w-4xl mx-auto bg-gray-100 rounded-xl overflow-hidden shadow-lg p-5"
-          >
-            <!-- Image -->
-            <img
-              :src="slotProps.data.img"
-              :alt="slotProps.data.title"
-              class="w-full h-[250px] md:h-[400px] object-fit md:object-none"
-            />
-
-            <!-- Content -->
-            <div class="space-y-4 text-center md:text-left mx-10">
-              <a
-                :href="slotProps.data.url"
-                class="text-xl md:text-3xl font-bold text-secondary hover:underline"
-                target="_blank"
-                v-html="slotProps.data.title"
-              />
-              <p
-                v-if="slotProps.data.description"
-                class="text-sm md:text-lg text-secondary tracking-wider"
-              >
-                {{ slotProps.data.description }}
-              </p>
-
-              <div class="pt-4">
-                <Link
-                  v-if="slotProps.data.slug"
-                  :href="`/products/${slotProps.data.slug}`"
-                  class="inline-block px-6 py-2 bg-primary-400 hover:bg-primary-500 text-white rounded-lg transition"
-                  :aria-label="`Learn more about ${slotProps.data.name}`"
-                >
-                  Learn more
-                </Link>
-              </div>
-            </div>
-          </div>
-        </template>
-      </Carousel>
+        <img
+          :src="project.img"
+          :alt="project.title"
+          class="w-full h-full object-cover rounded-lg"
+        />
+      </div>
+      <div
+        class="flex flex-col gap-4"
+        :class="index % 2 === 0 ? 'md:order-2' : 'md:order-1'"
+      >
+        <a :href="project.url" target="_blank" class="hover:underline">
+          <h1 class="text-xl md:text-3xl font-bold text-secondary hover:text-accent">
+            {{ project.title }}
+          </h1>
+        </a>
+        <p class="text-sm md:text-lg text-muted">
+          {{ project.description }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import { Carousel } from "primevue";
 
+<script setup lang="ts">
 const projects = [
   {
     url: "https://upmeworks.com/",

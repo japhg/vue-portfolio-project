@@ -14,7 +14,7 @@ import HowHeFound from '../About/HowHeFound.vue';
     </h1>
 
     <p
-      class="text-secondary text-sm md:text-lg tracking-wider leading-loose"
+      class="text-secondary text-sm md:text-lg"
     >
       I am a full-stack web
       developer who currently based in the Philippines. I graduated with a

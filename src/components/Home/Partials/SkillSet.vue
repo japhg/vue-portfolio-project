@@ -1,63 +1,15 @@
 <template>
   <a
-    :href="props.website"
+    :href="website"
     target="_blank"
-    class="bg-gray-100 px-5 py-4 rounded-lg shadow-md hover:bg-secondary relative group"
+    rel="noopener noreferrer"
+    class="bg-highlight px-5 py-4 rounded-lg shadow-md hover:bg-highlight/70 relative group"
   >
-    <VueIcon
-      v-if="props.icon.toLowerCase() == 'vue'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <InertiajsIcon
-      v-else-if="props.icon.toLowerCase() == 'inertia'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <TailwindIcon
-      v-else-if="props.icon.toLowerCase() == 'tailwind'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <LaravelIcon
-      v-else-if="props.icon.toLowerCase() == 'laravel'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <BootstrapIcon
-      v-else-if="props.icon.toLowerCase() == 'bootstrap'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <PhpIcon
-      v-else-if="props.icon.toLowerCase() == 'php'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <GitIcon
-      v-else-if="props.icon.toLowerCase() == 'git'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <MysqlIcon
-      v-else-if="props.icon.toLowerCase() == 'mysql'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <CplusIcon
-      v-else-if="props.icon.toLowerCase() == 'cplus'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <NuxtIcon
-      v-else-if="props.icon.toLowerCase() == 'nuxt'"
-      class="w-16 h-16 group-hover:opacity-10 transition-opacity duration-300"
-    />
-
-    <div
-      class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-    >
-      <span class="text-white font-medium px-3 text-center">{{ props.title }}</span>
+    <div class="flex flex-col items-center justify-center gap-2">
+      <component :is="icon" class="w-12 h-12" />
+      <p class="text-secondary font-medium text-center">
+        {{ title }}
+      </p>
     </div>
   </a>
 </template>
@@ -74,9 +26,18 @@ import MysqlIcon from "../../icons/MysqlIcon.vue";
 import CplusIcon from "../../icons/CplusIcon.vue";
 import NuxtIcon from "../../icons/NuxtIcon.vue";
 
-const props = defineProps<{
-  website: string;
-  icon: string;
-  title: string;
-}>();
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  icon: {
+    type: Object,
+    required: true,
+  },
+  website: {
+    type: String,
+    required: true,
+  },
+});
 </script>
