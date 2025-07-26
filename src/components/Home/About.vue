@@ -6,7 +6,7 @@ import HowHeFound from '../About/HowHeFound.vue';
 </script>
 
 <template>
-  <div class="w-full max-w-5xl my-20 flex flex-col gap-14">
+  <div class="w-full max-w-7xl my-20 flex flex-col gap-14">
     <h1
       class="text-secondary text-2xl md:text-5xl leading-2 font-light"
     >
