@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-5xl flex flex-col gap-5">
+  <div class="w-full max-w-7xl flex flex-col gap-5">
     <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light text-center">
       Technology <span class="text-accent">Stack</span>
     </h1>
