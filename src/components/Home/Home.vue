@@ -5,7 +5,7 @@
     <!-- Left side content -->
     <div class="flex flex-col gap-4 text-start order-2 md:order-1">
       <h3 class="text-lg text-accent font-roboto">James Philip Gomera</h3>
-      <h1 class="text-secondary text-5xl font-bold">
+      <h1 class="text-secondary text-6xl font-bold">
         I build things for the web.
       </h1>
       <p class="text-muted text-lg max-w-xl">
