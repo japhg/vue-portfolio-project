@@ -8,19 +8,19 @@ export default {
     colors: {
       ...colors,
       primary: {
-        DEFAULT: "#0A192F",
+        DEFAULT: "#16213E",
       },
       secondary: {
-        DEFAULT: "#CCD6F6",
+        DEFAULT: "#E5EAF5",
       },
       accent: {
         DEFAULT: "#64FFDA",
       },
       highlight: {
-        DEFAULT: "#112240",
+        DEFAULT: "#233554",
       },
       muted: {
-        DEFAULT: "#8892B0",
+        DEFAULT: "#AAB8C2",
       },
     },
     extend: {
