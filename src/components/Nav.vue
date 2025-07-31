@@ -8,7 +8,7 @@ const links = [
     url: "#about",
   },
   {
-    title: "Project",
+    title: "Projects",
     url: "#project",
   },
 ];
@@ -26,9 +26,9 @@ const links = [
     </RouterLink>
     <div class="flex gap-5">
       <div v-for="link in links">
-        <a :href="link.url" class="text-lg font-light px-5">
+        <a :href="link.url">
           <span
-            class="text-base md:text-lg text-muted hover:text-accent"
+            class="text-base md:text-base text-muted hover:text-accent"
           >
             {{ link.title }}
           </span>
