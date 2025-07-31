@@ -4,18 +4,42 @@
   >
     <!-- Left side content -->
     <div class="flex flex-col gap-4 text-start order-2 md:order-1">
-      <h3 class="text-lg text-accent font-roboto">James Philip Gomera</h3>
-      <h1 class="text-secondary text-6xl font-bold">
+      <h3
+        class="text-lg text-accent font-roboto"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="600"
+      >
+        James Philip Gomera
+      </h3>
+
+      <h1
+        class="text-secondary text-6xl font-bold"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="600"
+      >
         I build things for the web.
       </h1>
-      <p class="text-muted text-lg max-w-xl">
+
+      <p
+        class="text-muted text-lg max-w-xl mx-auto"
+        data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="600"
+      >
         I'm a Full-Stack Web Developer with strong expertise in both front-end
         and back-end technologies. Experienced in building dynamic, responsive,
         and user-friendly web applications using modern frameworks.
       </p>
 
-      <div class="mt-6 w-full" data-aos="fade-up" data-aos-duration="1000">
-        <a href="#project" class="">
+      <div
+        class="mt-6 w-full"
+        data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-duration="600"
+      >
+        <a href="#project">
           <button
             class="text-accent border border-accent px-8 py-3 rounded-md font-medium text-sm hover:bg-accent/10 transition-colors"
           >
