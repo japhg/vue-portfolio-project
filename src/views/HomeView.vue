@@ -20,7 +20,7 @@
                 </div>
             </section>
 
-            <section class="h-full px-5" id="project">
+            <section class="h-full px-5 mt-20" id="project">
                 <div class="w-full flex justify-center items-center">
                     <Projects />
                 </div>
