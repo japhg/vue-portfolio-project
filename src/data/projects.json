@@ -1,0 +1,66 @@
+[
+  {
+    "url": "https://upmeworks.com/",
+    "img": "/images/projects/upmeworks.png",
+    "title": "UpmeWorks",
+    "description": "Upmeworks is a business software that simply works for various industries. Our solutions seamlessly combine ready-to-use features with the flexibility of customization.",
+    "techStack": [
+      "Nuxt.js",
+      "Vue.js",
+      "Laravel",
+      "MySQL",
+      "TailwindCSS",
+      "Inertia.js",
+      "5+ more"
+    ]
+  },
+  {
+    "url": "https://mtapsystems.com/",
+    "img": "/images/projects/mtap-systems.png",
+    "title": "MTAP Systems",
+    "description": "MTAPSystems is a turnkey interactive website for identifying functional abilities, disabilities, and physical performance that can be used as integral components for patient management, particularly those with musculoskeletal disorders (MSDs).",
+    "techStack": [
+      "Vue.js",
+      "Laravel",
+      "MySQL",
+      "Tailwind",
+      "Inertia.js",
+      "7+ more"
+    ]
+  },
+  {
+    "url": "https://jobs.hrdpcnpromopro.com/index1.php",
+    "img": "/images/projects/job-portal.png",
+    "title": "Job Portal",
+    "description": "PCN Job Portal is an online platform that provides a space where applicants can search for job opportunities, apply for positions and manage their personal information.",
+    "techStack": ["Bootstrap", "PHP", "MySQL", "jQuery", "AJAX", "Git"]
+  },
+  {
+    "url": "https://portal.hrdpcnpromopro.com/index1.php",
+    "img": "/images/projects/human-resource-management-system.png",
+    "title": "Human Resource Management System",
+    "description": "PCN HRMS is designed to help company manage and automate various human resource (HR) department functions and processes. It serves as a centralized system that streamlines the management of employee information, recruitment, 201 files, training, and more.",
+    "techStack": ["PHP", "MySQL", "jQuery", "Bootstrap", "AJAX", "2+ more"]
+  },
+  {
+    "url": "https://clinic.pcnpromopro.com/",
+    "img": "/images/projects/clinic-management-system.png",
+    "title": "Clinic Management System",
+    "description": "Clinic Management System is designed to automate clinical processes such as setting appointments, managing patient information, health records, and more.",
+    "techStack": ["PHP", "MySQL", "jQuery", "Bootstrap", "AJAX", "2+ more"]
+  },
+  {
+    "url": "https://training.pcnpromopro.com/",
+    "img": "/images/projects/pcn_training.png",
+    "title": "Training Management System",
+    "description": "Training Management System is designed to manage and streamline the process of planning, delivering, and tracking employee training and development programs within an organization. It serves as a centralized platform for organizing various aspects of training, such as scheduling, content delivery, assessments, and performance tracking.",
+    "techStack": ["PHP", "MySQL", "jQuery", "Bootstrap", "AJAX", "2+ more"]
+  },
+  {
+    "url": "https://room.pcnpromopro.com/Room/index.php",
+    "img": "/images/projects/room-reservation.png",
+    "title": "Room Reservation System",
+    "description": "Room Reservation System is designed to automate the process of reserving rooms and managing room bookings for various events, meetings, and other activities. This system allows users to view room availability, make reservations, and track room usage, while also providing administrators with tools to manage bookings, resources, and schedules.",
+    "techStack": ["PHP", "MySQL", "jQuery", "Bootstrap", "AJAX", "2+ more"]
+  }
+]

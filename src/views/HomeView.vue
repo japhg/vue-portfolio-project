@@ -10,8 +10,11 @@
             <section class="flex h-full mb-20 px-5" id="about">
                 <div class="flex flex-col">
                     <About />
-                    <Skills />
                 </div>
+            </section>
+
+            <section class="flex w-full h-full mb-20 px-5" id="skills">
+                    <Skills />
             </section>
 
             <section class="h-full px-5">
@@ -26,7 +29,7 @@
                 </div>
             </section>
 
-            <section class="h-fit my-28 px-5">
+            <section class="h-fit my-28 px-5" id="contact">
                 <GetInTouch />
             </section>
 
