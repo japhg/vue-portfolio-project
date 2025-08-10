@@ -4,6 +4,7 @@ import { RouterLink } from "vue-router";
 import StarIcon from "./icons/StarIcon.vue";
 import MenuIcon from "./icons/MenuIcon.vue";
 import XMarkIcon from "./icons/XMarkIcon.vue";
+import links from "@/data/nav-links.json";
 
 const isMenuOpen = ref(false);
 
@@ -24,7 +25,7 @@ if (typeof window !== "undefined") {
 const isScrolled = ref(false);
 
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50; // change 50 to how far you want to scroll before changing bg
+  isScrolled.value = window.scrollY > 50;
 };
 
 onMounted(() => {
@@ -34,21 +35,6 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
-
-const links = [
-  {
-    title: "About",
-    url: "#about",
-  },
-  {
-    title: "Projects",
-    url: "#project",
-  },
-  {
-    title: "Contact",
-    url: "#contact",
-  },
-];
 </script>
 
 <template>

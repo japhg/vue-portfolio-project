@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import FacebookIcon from "./icons/FacebookIcon.vue";
+import GithubIcon from "./icons/GithubIcon.vue";
+import LinkedinIcon from "./icons/LinkedinIcon.vue";
+import TelegramIcon from "./icons/TelegramIcon.vue";
+import UpworkIcon from "./icons/UpworkIcon.vue";
+import ViberIcon from "./icons/ViberIcon.vue";
+
+const year = new Date().getFullYear();
+</script>
+
 <template>
   <div class="w-full h-full flex flex-col justify-center items-center gap-10">
     <h4 class="text-xl font-medium text-center text-secondary">
@@ -61,13 +72,3 @@
     <p>© {{ year }} Jph<i>i</i> Portfolio. All rights Reserved.</p>
   </div>
 </template>
-<script setup lang="ts">
-import FacebookIcon from "./icons/FacebookIcon.vue";
-import GithubIcon from "./icons/GithubIcon.vue";
-import LinkedinIcon from "./icons/LinkedinIcon.vue";
-import TelegramIcon from "./icons/TelegramIcon.vue";
-import UpworkIcon from "./icons/UpworkIcon.vue";
-import ViberIcon from "./icons/ViberIcon.vue";
-
-const year = new Date().getFullYear();
-</script>

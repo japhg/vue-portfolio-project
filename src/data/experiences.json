@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Full-Stack Web Developer",
+    "subtitle": "Independent Projects",
+    "date": "March 2024 - Present",
+    "description": [
+      "<span class=\"text-accent font-semibold\">Major Projects</span><ul role=\"list\" class=\"list-disc pl-8 space-y-1\"><li>MTAP Systems - Healthcare Assessment Platform</li><li>UpmeWorks - Business Software Platform</li><li>TheCEplace - E-learning Platform</li><li>QuickJuan POS - Point of Sale System (In Development)</li></ul>",
+      "<span class=\"text-accent font-semibold\">Responsibilities</span><ul role=\"list\" class=\"list-disc pl-8 space-y-1\"><li>Full-stack development of web applications</li><li>Client consultation and requirement gathering</li><li>System architecture design</li><li>Performance optimization and maintenance</li></ul>"
+    ],
+    "techStack": [
+      "Vue.js",
+      "Laravel",
+      "MySQL",
+      "TailwindCSS",
+      "TypeScript",
+      "Git",
+      "REST API"
+    ]
+  },
+  {
+    "title": "Freelance Developer",
+    "subtitle": "Upwork",
+    "date": "March 2024 - May 2024",
+    "description": [
+      "<span class=\"text-accent font-semibold\">Project Highlights</span><ul role=\"list\" class=\"list-disc pl-8 space-y-1\"><li>Developed key features for a social networking platform</li><li>Implemented secure user authentication system</li><li>Created responsive and interactive UI components</li><li>Optimized database queries for better performance</li></ul>"
+    ],
+    "techStack": [
+      "Vue.js",
+      "Node.js",
+      "PostgreSQL",
+      "TailwindCSS",
+      "WebSocket",
+      "AWS"
+    ]
+  },
+  {
+    "title": "Web Developer / IT Support",
+    "subtitle": "PCN Promopro Inc.",
+    "url": "https://pcnpromopro.com/",
+    "date": "May 2022 - April 2024",
+    "description": [
+      "As a <span class=\"text-secondary font-semibold\">Full-Stack PHP Developer</span>, I played a key role in developing and implementing various systems to enhance organizational efficiency.",
+      "<span class=\"text-accent font-semibold\">Notable Projects</span><ul role=\"list\" class=\"list-disc pl-8 space-y-1\"><li>Human Resource Management System (HRMS)</li><li>Training Management System</li><li>Clinic Management System</li><li>Room Reservation System with Push Notifications</li></ul>",
+      "<span class=\"text-accent font-semibold\">Key Achievements</span><ul role=\"list\" class=\"list-disc pl-8 space-y-1\"><li>Led the development of the HRMS, significantly improving HR department workflow efficiency</li><li>Implemented responsive design principles across all systems</li><li>Reduced system downtime through proactive maintenance</li><li>Provided technical mentorship to junior developers</li></ul>"
+    ],
+    "techStack": [
+      "PHP",
+      "MySQL",
+      "jQuery",
+      "Bootstrap",
+      "AJAX",
+      "REST API",
+      "Git"
+    ]
+  }
+]

@@ -1,20 +1,22 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="relative w-full max-w-7xl min-h-[80vh] flex items-center">
     <!-- Background Elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div
         class="absolute top-20 right-20 w-72 h-72 bg-accent/5 rounded-full blur-3xl"
-      ></div>
+      />
       <div
         class="absolute bottom-20 left-20 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"
-      ></div>
+      />
     </div>
 
     <!-- Main Content -->
     <div class="relative w-full p-5">
       <div class="max-w-3xl mx-auto">
         <!-- Header -->
-        <div class="space-y-6">
+        <div class="space-y-5">
           <h3
             class="inline-flex items-center gap-2 text-lg text-accent font-medium tracking-wide"
             data-aos="fade-up"
@@ -105,11 +107,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-// You can add any required component logic here
-</script>
-
-<style scoped>
-/* Add any component-specific styles here */
-</style>

@@ -1,3 +1,26 @@
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
+
+const quotes = [
+  "You’re not just a visitor — you’re the vibe.",
+  "Like a minimal site, your beauty needs no extras.",
+  "Creating is fun, but sharing it with you makes it meaningful.",
+];
+
+const currentIndex = ref(0);
+let interval: any | null = null;
+
+onMounted(() => {
+  interval = setInterval(() => {
+    currentIndex.value = (currentIndex.value + 1) % quotes.length;
+  }, 5000);
+});
+
+onUnmounted(() => {
+  clearInterval(interval);
+});
+</script>
+
 <template>
   <div class="w-full max-w-2xl mx-auto relative text-center">
     <transition-group name="fade" mode="out-in">
@@ -24,29 +47,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
-
-const quotes = [
-  "You’re not just a visitor — you’re the vibe.",
-  "Like a minimal site, your beauty needs no extras.",
-  "Creating is fun, but sharing it with you makes it meaningful.",
-];
-
-const currentIndex = ref(0);
-let interval: any | null = null;
-
-onMounted(() => {
-  interval = setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % quotes.length;
-  }, 5000); 
-});
-
-onUnmounted(() => {
-  clearInterval(interval);
-});
-</script>
 
 <style scoped>
 .fade-enter-active,

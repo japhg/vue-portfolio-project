@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import projects from "@/data/projects.json";
+</script>
+
 <template>
   <div class="w-full max-w-7xl flex flex-col gap-10">
     <h1
@@ -54,7 +58,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import projects from "@/data/projects.json";
-</script>

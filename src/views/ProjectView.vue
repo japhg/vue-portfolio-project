@@ -1,51 +1,5 @@
-<template>
-  <div class="w-full h-full max-w-5xl my-20 flex flex-col gap-14 font-sans">
-    <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__fadeInUp">
-      Projects
-    </h1>
-
-    <div
-      class="grid lg:grid-cols-2 gap-x-10 md:gap-x-16 xl:gap-x-20 gap-y-12 md:gap-y-24 lg:gap-y-40 mb-auto md:mb-52"
-    >
-      <template v-for="(project, index) in projects">
-        <div
-          class="bg-white rounded-3xl shadow-md h-full group hover:scale-[1.01] transition-all duration-150"
-        >
-          <div class="p-10">
-            <img class="rounded-lg w-full" :src="project.img" />
-          </div>
-
-          <div class="flex flex-col gap-4 items-start px-10 pb-10">
-            <h3
-              class="text-xl md:text-2xl font-bold text-secondary"
-              v-html="project.title"
-            />
-
-            <p
-              class="text-left text-sm md:text-base font-light text-secondary leading-relaxed"
-            >
-              {{ project.description }}
-            </p>
-
-            <a
-              :href="project.url"
-              target="_blank"
-              class="text-secondary border border-secondary px-5 py-3 mt-5 rounded-full font-light text-sm md:text-base hover:bg-secondary hover:text-white transition-colors"
-            >
-              <span class="flex items-center gap-1 text-sm">
-                View Site
-                <ArrowUpRightIcon  class="w-3.5 h-3.5" />
-              </span>
-            </a>
-          </div>
-        </div>
-      </template>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
-import ArrowUpRightIcon from '@/components/icons/ArrowUpRightIcon.vue';
+import ArrowUpRightIcon from "@/components/icons/ArrowUpRightIcon.vue";
 
 const projects = [
   {
@@ -92,3 +46,51 @@ const projects = [
   },
 ];
 </script>
+
+<template>
+  <div class="w-full h-full max-w-5xl my-20 flex flex-col gap-14 font-sans">
+    <h1
+      class="text-secondary text-2xl md:text-5xl leading-2 font-light animate__animated animate__fadeInUp"
+    >
+      Projects
+    </h1>
+
+    <div
+      class="grid lg:grid-cols-2 gap-x-10 md:gap-x-16 xl:gap-x-20 gap-y-12 md:gap-y-24 lg:gap-y-40 mb-auto md:mb-52"
+    >
+      <template v-for="(project, index) in projects">
+        <div
+          class="bg-white rounded-3xl shadow-md h-full group hover:scale-[1.01] transition-all duration-150"
+        >
+          <div class="p-10">
+            <img class="rounded-lg w-full" :src="project.img" />
+          </div>
+
+          <div class="flex flex-col gap-4 items-start px-10 pb-10">
+            <h3
+              class="text-xl md:text-2xl font-bold text-secondary"
+              v-html="project.title"
+            />
+
+            <p
+              class="text-left text-sm md:text-base font-light text-secondary leading-relaxed"
+            >
+              {{ project.description }}
+            </p>
+
+            <a
+              :href="project.url"
+              target="_blank"
+              class="text-secondary border border-secondary px-5 py-3 mt-5 rounded-full font-light text-sm md:text-base hover:bg-secondary hover:text-white transition-colors"
+            >
+              <span class="flex items-center gap-1 text-sm">
+                View Site
+                <ArrowUpRightIcon class="w-3.5 h-3.5" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</template>
