@@ -30,7 +30,7 @@ import HowHeFound from "../About/HowHeFound.vue";
             With a
             <span class="text-secondary font-medium"
               >Bachelor's degree in Information Technology</span
-            >, specializing in Information Management from Bestlink College of
+            >, major in Information Management from Bestlink College of
             the Philippines, I bring a solid foundation in both theory and
             practice to my development work.
           </p>

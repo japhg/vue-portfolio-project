@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import About from "@/components/Home/About.vue";
-import GetInTouch from "@/components/Home/GetInTouch.vue";
-import Home from "@/components/Home/Home.vue";
-import Projects from "@/components/Home/Projects.vue";
-import Skills from "@/components/Home/Skills.vue";
-import WorkExperience from "@/components/Home/WorkExperience.vue";
+import About from '@/components/Home/About.vue'
+import GetInTouch from '@/components/Home/GetInTouch.vue'
+import Home from '@/components/Home/Home.vue'
+import Projects from '@/components/Home/Projects.vue'
+import Skills from '@/components/Home/Skills.vue'
+import WorkExperience from '@/components/Home/WorkExperience.vue'
 </script>
 
 <template>
@@ -23,7 +23,7 @@ import WorkExperience from "@/components/Home/WorkExperience.vue";
             </section>
 
             <section class="flex w-full h-full mb-20 px-5" id="skills">
-                    <Skills />
+                <Skills />
             </section>
 
             <section class="h-full px-5">
