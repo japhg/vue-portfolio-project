@@ -60,7 +60,7 @@ const socials = [
         >
             <component
                 :is="social.icon"
-                class="w-8 h-8 hover:fill-accent transition-all duration-500 ease-in-out"
+                class="w-8 h-8 fill-white/80 hover:fill-accent transition-all duration-500 ease-in-out"
             />
         </a>
     </div>

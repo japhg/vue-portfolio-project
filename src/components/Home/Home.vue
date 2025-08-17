@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="relative w-full max-w-7xl min-h-[80vh] flex items-center">
+    <div class="relative w-full max-w-7xl h-full min-h-[80vh] flex items-center">
         <!-- Background Elements -->
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="hidden md:inline absolute inset-0 overflow-hidden pointer-events-none">
             <div class="absolute top-20 right-20 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
             <div
                 class="absolute bottom-20 left-20 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"
@@ -21,7 +21,7 @@
                         data-aos-delay="0"
                         data-aos-duration="600"
                     >
-                        <span class="w-10 h-px bg-accent"></span>
+                        <span class="w-10 h-px bg-accent" />
                         James Philip Gomera
                     </h3>
 
@@ -38,7 +38,7 @@
                     </h1>
 
                     <p
-                        class="text-muted text-lg md:text-xl max-w-2xl"
+                        class="text-muted text-base md:text-xl max-w-2xl"
                         data-aos="fade-up"
                         data-aos-delay="400"
                         data-aos-duration="600"
@@ -58,7 +58,7 @@
                 >
                     <a href="#project">
                         <button
-                            class="group relative px-8 py-3 border border-accent text-white font-medium rounded-lg transition-all duration-300 hover:bg-accent/90 hover:text-black hover:font-medium hover:shadow-lg hover:shadow-accent/20"
+                            class="group relative px-8 py-3 border border-accent text-white text-sm md:text-base font-medium rounded-lg transition-all duration-300 hover:bg-accent/90 hover:text-black hover:font-medium hover:shadow-lg hover:shadow-accent/20"
                         >
                             View My Work
                             <div
@@ -68,7 +68,7 @@
                     </a>
                     <a
                         href="#contact"
-                        class="px-6 py-3 text-muted hover:text-accent transition-colors duration-300"
+                        class="px-6 py-3 text-muted text-sm md:text-base hover:text-accent transition-colors duration-300"
                     >
                         Let's Connect →
                     </a>

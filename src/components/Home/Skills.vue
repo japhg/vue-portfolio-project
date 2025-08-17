@@ -104,9 +104,6 @@ const toolsSkills = [
                 >
                     Technology <span class="text-accent mt-2">Stack</span>
                 </h1>
-                <p class="text-muted text-lg max-w-2xl mx-auto">
-                    A collection of technologies I use to bring ideas to life
-                </p>
             </div>
 
             <!-- Skills Grid -->

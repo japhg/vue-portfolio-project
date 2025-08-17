@@ -18,7 +18,7 @@ import EnvelopeIcon from '../icons/EnvelopeIcon.vue'
         data-aos="fade-up"
         data-aos-duration="1000"
     >
-        <a href="mailto:jpgomera19@gmail.com">
+        <a href="mailto:jpgomera19@gmail.com?subject=Inquiries">
             <button
                 class="text-accent border border-accent px-8 py-3 rounded-md font-medium text-sm hover:bg-accent/10 transition-colors"
             >
