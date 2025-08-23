@@ -10,7 +10,7 @@ import WorkExperience from '@/components/Home/WorkExperience.vue'
 <template>
     <div class="w-full max-w-6xl">
         <main class="flex flex-col gap-10">
-            <section class="flex justify-center items-center h-screen px-5">
+            <section class="flex justify-center items-center h-full sm:h-screen px-5">
                 <div class="flex flex-col justify-center items-center gap-10">
                     <Home />
                 </div>
