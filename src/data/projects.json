@@ -1,12 +1,5 @@
 [
     {
-        "url": "https://resumate-gray.vercel.app/",
-        "img": "/images/projects/resumate.png",
-        "title": "ResuMate",
-        "description": "Resumate is a modern resume builder that helps job seekers quickly create professional, polished resumes. Built with Nuxt, Tailwind, and Firebase, it offers a clean UI, customizable templates, and real-time editing to make showcasing skills and experience effortless. (Under Development)",
-        "techStack": ["Nuxt.js", "Vue.js", "Firebase", "TailwindCSS", "VueFire"]
-    },
-    {
         "url": "https://upmeworks.com/",
         "img": "/images/projects/upme-works.png",
         "title": "UpmeWorks",
@@ -54,13 +47,6 @@
         "img": "/images/projects/pcn_training.png",
         "title": "Training Management System",
         "description": "Training Management System is designed to manage and streamline the process of planning, delivering, and tracking employee training and development programs within an organization. It serves as a centralized platform for organizing various aspects of training, such as scheduling, content delivery, assessments, and performance tracking.",
-        "techStack": ["PHP", "MySQL", "jQuery", "Bootstrap", "AJAX", "2+ more"]
-    },
-    {
-        "url": "https://room.pcnpromopro.com/Room/index.php",
-        "img": "/images/projects/room-reservation.png",
-        "title": "Room Reservation System",
-        "description": "Room Reservation System is designed to automate the process of reserving rooms and managing room bookings for various events, meetings, and other activities. This system allows users to view room availability, make reservations, and track room usage, while also providing administrators with tools to manage bookings, resources, and schedules.",
         "techStack": ["PHP", "MySQL", "jQuery", "Bootstrap", "AJAX", "2+ more"]
     }
 ]

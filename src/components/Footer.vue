@@ -37,36 +37,40 @@ const socials = [
     {
         name: 'Viber',
         url: 'https://vb.me/letsChatOnViber',
-        icon: FacebookIcon,
+        icon: ViberIcon,
     },
 ]
 </script>
 
 <template>
-    <div class="w-full h-full flex flex-col justify-center items-center gap-10">
-        <h4 class="text-xl font-medium text-center text-secondary">
-            Social <span class="text-accent">Links:</span>
-        </h4>
-    </div>
+    <footer class="mt-20 md:mt-32">
+        <div class="w-full flex flex-col justify-center items-center">
+            <div class="w-full h-full flex flex-col justify-center items-center gap-10">
+                <h4 class="text-xl font-medium text-center text-secondary">
+                    Social <span class="text-accent">Links:</span>
+                </h4>
+            </div>
 
-    <div class="flex flex-wrap items-center gap-3 mt-3">
-        <a
-            v-for="(social, key) in socials"
-            :key="key"
-            :href="social.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-accent"
-        >
-            <component
-                :is="social.icon"
-                class="w-8 h-8 fill-white/80 hover:fill-accent transition-all duration-500 ease-in-out"
-            />
-        </a>
-    </div>
+            <div class="flex flex-wrap items-center gap-3 mt-3">
+                <a
+                    v-for="(social, key) in socials"
+                    :key="key"
+                    :href="social.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-accent"
+                >
+                    <component
+                        :is="social.icon"
+                        class="w-8 h-8 fill-white/80 hover:fill-accent hover:shadow-xl transition-all duration-500 ease-in-out"
+                    />
+                </a>
+            </div>
 
-    <div class="py-4 text-muted font-light text-sm text-center">
-        <hr class="border-white/10 mb-4" />
-        <p>© {{ year }} Jph<i>i</i> Portfolio. All rights Reserved.</p>
-    </div>
+            <div class="py-4 text-muted font-light text-sm text-center">
+                <hr class="border-white/10 mb-4" />
+                <p>© {{ year }} Jph<i>i</i> Portfolio. All rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 </template>

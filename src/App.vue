@@ -36,7 +36,7 @@ onUnmounted(() => {
             class="absolute -bottom-8 left-20 w-72 h-72 bg-accent rounded-full mix-blend-lighten filter blur-xl opacity-20 animate-blob animation-delay-4000"
         />
 
-        <main class="relative z-10">
+        <div class="relative z-10">
             <header
                 class="w-full fixed top-0 left-0 right-0 transition-all duration-500 ease-in-out z-50"
                 :class="
@@ -54,12 +54,8 @@ onUnmounted(() => {
                 <RouterView />
             </div>
 
-            <footer class="mt-20 md:mt-32">
-                <div class="w-full flex flex-col justify-center items-center">
-                    <Footer />
-                </div>
-            </footer>
-        </main>
+            <Footer />
+        </div>
     </div>
 </template>
 
