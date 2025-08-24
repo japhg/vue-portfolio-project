@@ -19,7 +19,7 @@
         "img": "/images/projects/mtap-systems.png",
         "title": "MTAP Systems",
         "description": "MTAPSystems is a turnkey interactive website for identifying functional abilities, disabilities, and physical performance that can be used as integral components for patient management, particularly those with musculoskeletal disorders (MSDs).",
-        "techStack": ["Vue.js", "Laravel", "MySQL", "Tailwind", "Inertia.js", "7+ more"]
+        "techStack": ["Vue.js", "Laravel", "MySQL", "TailwindCSS", "Inertia.js", "7+ more"]
     },
     {
         "url": "https://jobs.hrdpcnpromopro.com/index1.php",

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import FacebookIcon from './icons/FacebookIcon.vue'
 import GithubIcon from './icons/GithubIcon.vue'
+import InstagramIcon from './icons/InstagramIcon.vue'
 import LinkedinIcon from './icons/LinkedinIcon.vue'
 import TelegramIcon from './icons/TelegramIcon.vue'
 import UpworkIcon from './icons/UpworkIcon.vue'
@@ -13,6 +14,11 @@ const socials = [
         name: 'Facebook',
         url: 'https://www.facebook.com/Jpgomera19/',
         icon: FacebookIcon,
+    },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/jphi.19/',
+        icon: InstagramIcon,
     },
     {
         name: 'Github',
@@ -33,11 +39,6 @@ const socials = [
         name: 'Upwork',
         url: 'https://www.upwork.com/freelancers/~0134531ce6db4c80f1',
         icon: UpworkIcon,
-    },
-    {
-        name: 'Viber',
-        url: 'https://vb.me/letsChatOnViber',
-        icon: ViberIcon,
     },
 ]
 </script>

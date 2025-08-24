@@ -32,7 +32,7 @@ import projects from '@/data/projects.json'
                                 v-if="project.img != null"
                                 :src="project.img"
                                 :alt="project.title"
-                                class="w-full h-full object-cover"
+                                class="w-full h-full object-scale-down"
                             />
                         </div>
                         <div class="p-6 flex flex-col gap-4">
