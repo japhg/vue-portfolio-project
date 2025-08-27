@@ -1,8 +1,7 @@
 @import './base.css';
 
 html, body {
-  @apply bg-primary;
-  /* background-color: #f5f5f7 !important  ; */
+  /* Base theme colors are defined in base.css (:root and .dark) */
 }
 
 #app {

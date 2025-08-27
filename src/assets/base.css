@@ -12,7 +12,7 @@
     @font-face {
         font-family: "Inter";
         font-style: normal;
-        font-weight: 400;
+        font-weight: 100;
         font-display: swap;
         src: url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
     }
@@ -22,5 +22,36 @@
         font-weight: 400;
         font-display: swap;
         src: url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+    }
+}
+
+/* Theme tokens via CSS variables (RGB channels) */
+:root {
+    /* Light mode */
+    --color-background: 248 250 252; /* slate-50 */
+    --color-surface: 255 255 255;     /* white */
+    --color-primary: 17 24 39;        /* gray-900 */
+    --color-secondary: 71 85 105;     /* slate-600 */
+    --color-mint: 10 186 181;         /* #0ABAB5 */
+    --color-accent: 100 255 218;      /* #64FFDA */
+    --color-highlight: 35 53 84;      /* #233554 */
+    --color-muted: 148 163 184;       /* slate-400 */
+}
+
+.dark {
+    /* Dark mode */
+    --color-background: 22 33 62;     /* #16213E */
+    --color-surface: 35 53 84;        /* #233554 */
+    --color-primary: 229 234 245;     /* #E5EAF5 */
+    --color-secondary: 170 184 194;   /* #AAB8C2 */
+    --color-mint: 10 186 181;         /* #0ABAB5 */
+    --color-accent: 100 255 218;      /* #64FFDA */
+    --color-highlight: 35 53 84;      /* #233554 */
+    --color-muted: 139 152 170;       /* ~slate-500 */
+}
+
+@layer base {
+    html, body {
+        @apply bg-background text-primary antialiased;
     }
 }

@@ -25,15 +25,15 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <div class="bg-primary min-h-screen relative overflow-hidden">
+    <div class="bg-background min-h-screen relative overflow-hidden">
         <div
-            class="absolute top-0 -left-4 w-72 h-72 bg-accent rounded-full mix-blend-lighten filter blur-xl opacity-20 animate-blob"
+            class="absolute top-0 -left-4 w-72 h-72 bg-accent rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-20 animate-blob"
         />
         <div
-            class="absolute top-0 -right-4 w-72 h-72 bg-[#A78BFA] rounded-full mix-blend-lighten filter blur-xl opacity-20 animate-blob animation-delay-2000"
+            class="absolute top-0 -right-4 w-72 h-72 bg-[#A78BFA] rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-20 animate-blob animation-delay-2000"
         />
         <div
-            class="absolute -bottom-8 left-20 w-72 h-72 bg-accent rounded-full mix-blend-lighten filter blur-xl opacity-20 animate-blob animation-delay-4000"
+            class="absolute -bottom-8 left-20 w-72 h-72 bg-accent rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-20 animate-blob animation-delay-4000"
         />
 
         <div class="relative z-10">
@@ -41,7 +41,7 @@ onUnmounted(() => {
                 class="w-full fixed top-0 left-0 right-0 transition-all duration-500 ease-in-out z-50"
                 :class="
                     isScrolled
-                        ? 'bg-primary/80 backdrop-blur-sm shadow-lg shadow-secondary/5'
+                        ? 'bg-surface/80 dark:bg-primary/80 backdrop-blur-sm shadow-lg shadow-secondary/10'
                         : 'bg-transparent'
                 "
             >
@@ -49,7 +49,7 @@ onUnmounted(() => {
             </header>
 
             <div
-                class="flex flex-col items-center gap-5 justify-center pt-24 md:pt-28 selection:bg-[#FF2D20] selection:text-white"
+                class="flex flex-col items-center gap-5 justify-center pt-20 selection:bg-[#FF2D20] selection:text-white"
             >
                 <RouterView />
             </div>

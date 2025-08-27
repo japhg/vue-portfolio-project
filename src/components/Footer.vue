@@ -47,8 +47,8 @@ const socials = [
     <footer class="mt-20 md:mt-32">
         <div class="w-full flex flex-col justify-center items-center">
             <div class="w-full h-full flex flex-col justify-center items-center gap-10">
-                <h4 class="text-xl font-medium text-center text-secondary">
-                    Social <span class="text-accent">Links:</span>
+                <h4 class="text-xl font-medium text-center text-primary dark:text-secondary">
+                    Social <span class="text-mint dark:text-accent">Links:</span>
                 </h4>
             </div>
 
@@ -63,13 +63,13 @@ const socials = [
                 >
                     <component
                         :is="social.icon"
-                        class="w-8 h-8 fill-white/80 hover:fill-accent hover:shadow-xl transition-all duration-500 ease-in-out"
+                        class="w-8 h-8 fill-primary/80 dark:fill-white/80 hover:fill-mint dark:hover:fill-accent hover:shadow-xl transition-all duration-300 ease-in-out"
                     />
                 </a>
             </div>
 
-            <div class="py-4 text-muted font-light text-sm text-center">
-                <hr class="border-white/10 mb-4" />
+            <div class="py-4 font-light text-sm text-center text-secondary/80 dark:text-muted">
+                <hr class="border-secondary/10 mb-4" />
                 <p>© {{ year }} Jph<i>i</i> Portfolio. All rights Reserved.</p>
             </div>
         </div>
