@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import techStacks from '@/data/tech-stacks.json'
+</script>
 
 <template>
     <section class="flex justify-center items-center h-full sm:h-screen px-5" id="home">
@@ -16,33 +18,34 @@
 
                 <!-- Main Content -->
                 <div class="relative w-full p-5">
-                    <div class="max-w-3xl mx-auto">
+                    <div class="max-w-3xl mx-auto ">
                         <!-- Header -->
                         <div class="space-y-5">
                             <h3
-                                class="inline-flex items-center gap-2 text-lg text-accent font-medium tracking-wide"
+                                class="inline-flex items-center gap-2 text-lg text-mint dark:text-accent font-medium tracking-wide"
                                 data-aos="fade-up"
                                 data-aos-delay="0"
                                 data-aos-duration="600"
                             >
-                                <span class="w-10 h-px bg-accent" />
+                                <span class="w-10 h-px bg-mint dark:bg-accent" />
                                 James Philip Gomera
                             </h3>
 
                             <h1
-                                class="text-4xl md:text-6xl lg:text-7xl font-bold text-secondary leading-tight"
+                                class="text-4xl md:text-6xl lg:text-7xl font-bold text-primary dark:text-white leading-tight tracking-tight"
                                 data-aos="fade-up"
                                 data-aos-delay="200"
                                 data-aos-duration="600"
                             >
-                                I build things
+                                I solve problems and
                                 <span class="block mt-2">
-                                    for the <span class="text-accent">web.</span>
+                                    build for the
+                                    <span class="text-mint dark:text-accent">web.</span>
                                 </span>
                             </h1>
 
                             <p
-                                class="text-muted text-base md:text-xl max-w-2xl"
+                                class="text-secondary dark:text-muted text-base md:text-lg max-w-2xl"
                                 data-aos="fade-up"
                                 data-aos-delay="400"
                                 data-aos-duration="600"
@@ -63,17 +66,17 @@
                         >
                             <a href="#project">
                                 <button
-                                    class="group relative px-8 py-3 border border-accent text-white text-sm md:text-base font-medium rounded-lg transition-all duration-300 hover:bg-accent/90 hover:text-black hover:font-medium hover:shadow-lg hover:shadow-accent/20"
+                                    class="group relative px-8 py-3 border border-primary/60 dark:border-accent text-primary/80 dark:text-white text-sm md:text-base font-medium rounded-lg transition-all duration-300 hover:border-mint hover:bg-mint hover:text-white dark:hover:bg-accent/90 dark:hover:text-black hover:shadow-lg hover:shadow-accent/20"
                                 >
                                     View My Work
                                     <div
-                                        class="absolute inset-x-0 h-px bottom-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform"
-                                    ></div>
+                                        class="absolute inset-x-0 h-px -bottom-1 bg-primary dark:bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform"
+                                    />
                                 </button>
                             </a>
                             <a
                                 href="#contact"
-                                class="px-6 py-3 text-muted text-sm md:text-base hover:text-accent transition-colors duration-300"
+                                class="px-6 py-3 text-secondary/80 dark:text-muted text-sm md:text-base hover:text-mint dark:hover:text-accent transition-colors duration-300"
                             >
                                 Let's Connect →
                             </a>
@@ -86,27 +89,13 @@
                             data-aos-delay="800"
                             data-aos-duration="600"
                         >
-                            <span class="px-3 py-1 bg-secondary/5 text-muted rounded-full text-sm"
-                                >Vue.js</span
+                            <span
+                                v-for="(tech, index) in techStacks"
+                                :key="index"
+                                class="px-3 py-1 bg-primary/5 dark:bg-secondary/5 text-secondary dark:text-muted rounded-full text-sm"
                             >
-                            <span class="px-3 py-1 bg-secondary/5 text-muted rounded-full text-sm"
-                                >Laravel</span
-                            >
-                            <span class="px-3 py-1 bg-secondary/5 text-muted rounded-full text-sm"
-                                >TypeScript</span
-                            >
-                            <span class="px-3 py-1 bg-secondary/5 text-muted rounded-full text-sm"
-                                >Nuxt.js</span
-                            >
-                            <span class="px-3 py-1 bg-secondary/5 text-muted rounded-full text-sm"
-                                >MySQL</span
-                            >
-                            <span class="px-3 py-1 bg-secondary/5 text-muted rounded-full text-sm"
-                                >TailwindCSS</span
-                            >
-                            <span class="px-3 py-1 bg-secondary/5 text-muted rounded-full text-sm"
-                                >Bootstrap</span
-                            >
+                                {{ tech.name }}
+                            </span>
                         </div>
                     </div>
                 </div>

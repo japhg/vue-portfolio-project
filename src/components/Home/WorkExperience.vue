@@ -6,13 +6,15 @@ import experiences from '@/data/experiences.json'
     <section class="h-full px-5">
         <div class="w-full flex justify-center items-center">
             <div class="w-full max-w-5xl flex flex-col gap-8">
-                <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-medium text-center">
-                    Work <span class="text-accent">Experience</span>
-                </h1>
+                <h2
+                    class="text-primary dark:text-secondary text-2xl md:text-5xl leading-2 font-semibold text-center"
+                >
+                    Work <span class="text-mint dark:text-accent">Experience</span>
+                </h2>
                 <div class="relative flex flex-col gap-8">
                     <!-- Timeline line -->
                     <div
-                        class="absolute left-0 md:left-1/2 h-full w-px bg-accent/20 transform -translate-x-px md:-translate-x-px"
+                        class="absolute left-0 md:left-1/2 h-full w-px bg-secondary/20 dark:bg-accent/20 transform -translate-x-px md:-translate-x-px"
                     />
 
                     <div
@@ -27,12 +29,12 @@ import experiences from '@/data/experiences.json'
                     >
                         <!-- Timeline dot -->
                         <div
-                            class="absolute left-0 md:left-1/2 w-4 h-4 bg-accent rounded-full transform -translate-x-1.5 md:-translate-x-2 mt-2"
+                            class="absolute left-0 md:left-1/2 w-4 h-4 bg-mint dark:bg-accent rounded-full transform -translate-x-1.5 md:-translate-x-2 mt-2"
                         />
 
                         <!-- Content card -->
                         <div
-                            class="ml-6 md:ml-0 bg-secondary/5 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                            class="ml-6 md:ml-0 bg-white/95 dark:bg-secondary/5 border border-secondary/10 dark:border-none rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
                             :class="index % 2 === 1 ? 'md:mr-8' : 'md:ml-8 md:col-start-1'"
                         >
                             <div class="flex items-start gap-4 mb-4">
@@ -41,7 +43,7 @@ import experiences from '@/data/experiences.json'
                                         v-if="experience.url"
                                         :href="experience.url"
                                         target="_blank"
-                                        class="group inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors duration-300"
+                                        class="group inline-flex items-center gap-2 text-primary hover:text-accent transition-colors duration-300"
                                     >
                                         <h2 class="text-xl font-bold group-hover:underline">
                                             {{ experience.title }}
@@ -50,14 +52,16 @@ import experiences from '@/data/experiences.json'
                                             class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                         />
                                     </a>
-                                    <h2 v-else class="text-xl font-bold text-secondary">
+                                    <h3 v-else class="text-xl font-bold text-primary">
                                         {{ experience.title }}
-                                    </h2>
+                                    </h3>
                                     <div class="mt-1">
-                                        <h3 class="text-base font-medium text-muted">
+                                        <h4
+                                            class="text-base font-medium text-secondary/80 dark:text-muted"
+                                        >
                                             {{ experience.subtitle }}
-                                        </h3>
-                                        <p class="text-sm text-accent mt-1">
+                                        </h4>
+                                        <p class="text-sm text-mint dark:text-accent mt-1">
                                             {{ experience.date }}
                                         </p>
                                     </div>
@@ -68,16 +72,16 @@ import experiences from '@/data/experiences.json'
                                 <div
                                     v-for="(desc, descIndex) in experience.description"
                                     :key="descIndex"
-                                    class="text-sm text-muted prose prose-invert max-w-none"
+                                    class="prose prose-invert text-sm text-secondary/80 dark:text-muted max-w-none"
                                     v-html="desc"
-                                ></div>
+                                />
                             </div>
 
                             <div v-if="experience.techStack" class="mt-4 flex flex-wrap gap-2">
                                 <span
                                     v-for="tech in experience.techStack"
                                     :key="tech"
-                                    class="px-2 py-1 text-xs rounded-full bg-accent/10 text-accent"
+                                    class="px-2 py-1 text-xs rounded-full bg-mint/10 text-mint dark:bg-accent/10 dark:text-accent"
                                 >
                                     {{ tech }}
                                 </span>

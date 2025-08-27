@@ -17,7 +17,7 @@ import WorkExperience from '@/components/Home/WorkExperience.vue'
             <Projects />
             <GetInTouch />
 
-            <hr class="border-white/10" />
+            <hr class="border-secondary/10" />
         </main>
     </div>
 </template>

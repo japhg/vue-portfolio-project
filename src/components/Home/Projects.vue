@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import projects from '@/data/projects.json'
 
-
 // Commented out for the meantime since the project is still under development
 //  {
 //         "url": "https://resumate-gray.vercel.app/",
@@ -16,14 +15,16 @@ import projects from '@/data/projects.json'
     <section class="h-full px-5 mt-20" id="project">
         <div class="w-full flex justify-center items-center">
             <div class="w-full max-w-7xl flex flex-col gap-10">
-                <h1 class="text-secondary text-2xl md:text-5xl leading-2 font-medium text-center">
-                    My <span class="text-accent">Projects</span>
+                <h1
+                    class="text-primary dark:text-secondary text-2xl md:text-5xl leading-2 font-semibold text-center"
+                >
+                    My <span class="text-mint dark:text-accent">Projects</span>
                 </h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div
                         v-for="(project, index) in projects"
                         :key="index"
-                        class="flex flex-col flex-grow bg-secondary/5 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        class="flex flex-col flex-grow bg-white/95 dark:bg-secondary/5 border border-secondary/10 dark:border-none rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
                         data-aos="fade-up"
                         :data-aos-delay="index * 100"
                     >
@@ -36,19 +37,21 @@ import projects from '@/data/projects.json'
                             />
                         </div>
                         <div class="p-6 flex flex-col gap-4">
-                            <a :href="project.url" target="_blank" class="hover:underline">
-                                <h2 class="text-xl font-semibold text-secondary hover:text-accent">
+                            <a :href="project.url" target="_blank">
+                                <h2
+                                    class="text-xl font-semibold text-primary dark:text-secondary hover:text-mint dark:hover:text-accent transition-all duration-200"
+                                >
                                     {{ project.title }}
                                 </h2>
                             </a>
-                            <p class="text-sm text-muted">
+                            <p class="text-sm text-secondary/80 dark:text-muted">
                                 {{ project.description }}
                             </p>
                             <div class="flex flex-wrap gap-2 mt-2">
                                 <span
                                     v-for="(tech, techIndex) in project.techStack"
                                     :key="techIndex"
-                                    class="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent"
+                                    class="px-3 py-1 text-xs rounded-full bg-mint/10 text-mint dark:bg-accent/10 dark:text-accent"
                                 >
                                     {{ tech }}
                                 </span>
@@ -59,7 +62,7 @@ import projects from '@/data/projects.json'
                             <a
                                 :href="project.url"
                                 target="_blank"
-                                class="inline-block px-6 py-3 font-semibold text-white border border-accent rounded-md transition-all duration-300 w-full text-center hover:bg-accent hover:text-black"
+                                class="inline-block px-6 py-3 font-semibold text-primary dark:text-white border border-primary dark:border-accent rounded-md transition-all duration-300 w-full text-center hover:border-mint hover:bg-mint hover:text-white dark:hover:bg-accent dark:hover:text-black"
                             >
                                 Preview
                             </a>

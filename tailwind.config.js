@@ -1,39 +1,37 @@
-import defaultTheme from "tailwindcss/defaultTheme";
-import colors from "tailwindcss/colors";
+import defaultTheme from 'tailwindcss/defaultTheme'
+import colors from 'tailwindcss/colors'
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  theme: {
-    colors: {
-      ...colors,
-      primary: {
-        DEFAULT: "#16213E",
-      },
-      secondary: {
-        DEFAULT: "#E5EAF5",
-      },
-      accent: {
-        DEFAULT: "#64FFDA",
-      },
-      highlight: {
-        DEFAULT: "#233554",
-      },
-      muted: {
-        DEFAULT: "#AAB8C2",
-      },
+    darkMode: 'class',
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    theme: {
+        colors: {
+            ...colors,
+            transparent: 'transparent',
+            current: 'currentColor',
+
+            // Semantic theme tokens powered by CSS variables
+            background: 'rgb(var(--color-background) / <alpha-value>)',
+            surface: 'rgb(var(--color-surface) / <alpha-value>)',
+            primary: 'rgb(var(--color-primary) / <alpha-value>)',
+            secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+            mint: 'rgb(var(--color-mint) / <alpha-value>)',
+            accent: 'rgb(var(--color-accent) / <alpha-value>)',
+            highlight: 'rgb(var(--color-highlight) / <alpha-value>)',
+            muted: 'rgb(var(--color-muted) / <alpha-value>)',
+        },
+        extend: {
+            backgroundImage: {
+                'gradient-primary': "url('/images/gradient.png')",
+            },
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+                archivo: ['Archivo'],
+                poppins: ['Poppins'],
+                roboto: ['Roboto'],
+            },
+        },
     },
-    extend: {
-      backgroundImage: {
-        'gradient-primary': "url('/images/gradient.png')"
-      },
-      fontFamily: {
-        sans: ["Inter", 'sans-serif'],
-        archivo: ["Archivo"],
-        poppins: ["Poppins"],
-        roboto: ["Roboto"],
-      },
-    },
-  },
-  plugins: [],
-};
+    plugins: [],
+}
