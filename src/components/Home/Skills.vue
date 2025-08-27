@@ -96,7 +96,7 @@ const toolsSkills = [
     <section class="flex w-full h-full mb-20 px-5" id="skills">
         <div class="relative w-full max-w-7xl py-16">
             <!-- Background Elements -->
-            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="hidden md:inline absolute inset-0 overflow-hidden pointer-events-none">
                 <div
                     class="absolute top-20 right-20 w-72 h-72 bg-mint/5 dark:bg-accent/5 rounded-full blur-3xl"
                 ></div>

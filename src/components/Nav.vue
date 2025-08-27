@@ -136,20 +136,18 @@ watchEffect(() => {
 
                     <!-- Menu Items -->
                     <nav class="bg-background/95 backdrop-blur-md">
-                        <div class="mx-5 py-4">
-                            <button
-                                type="button"
-                                @click="isDark = !isDark"
-                                aria-label="Toggle color mode"
-                                class="flex gap-2 place-items-center"
-                            >
-                                <component
-                                    :is="isDark ? MoonIcon : SunIcon"
-                                    class="w-5 h-5 text-primary/80 hover:text-mint dark:text-secondary dark:hover:text-accent transition-colors duration-200 ease-in-out"
-                                />
-                                {{ isDark ? 'Dark' : 'Light' }} Mode
-                            </button>
-                        </div>
+                        <button
+                            type="button"
+                            @click="isDark = !isDark"
+                            aria-label="Toggle color mode"
+                            class="flex gap-2 place-items-center px-5 py-4 w-full h-auto hover:bg-accent/10"
+                        >
+                            <component
+                                :is="isDark ? MoonIcon : SunIcon"
+                                class="w-5 h-5 text-primary/80 hover:text-mint dark:text-secondary dark:hover:text-accent transition-colors duration-200 ease-in-out"
+                            />
+                            {{ isDark ? 'Dark' : 'Light' }} Mode
+                        </button>
                         <div class="">
                             <a
                                 v-for="link in links"

@@ -48,7 +48,7 @@ const socials = [
         <div class="w-full flex flex-col justify-center items-center">
             <div class="w-full h-full flex flex-col justify-center items-center gap-10">
                 <h4 class="text-xl font-medium text-center text-primary dark:text-secondary">
-                    Social <span class="text-mint dark:text-accent">Links:</span>
+                    Social <span class="text-mint dark:text-accent">Media:</span>
                 </h4>
             </div>
 

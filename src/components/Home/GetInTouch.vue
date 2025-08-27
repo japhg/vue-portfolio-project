@@ -23,7 +23,7 @@ import EnvelopeIcon from '../icons/EnvelopeIcon.vue'
         >
             <a href="mailto:jpgomera19@gmail.com?subject=Inquiries">
                 <button
-                    class="text-mint dark:text-accent border border-mint dark:border-accent px-8 py-3 rounded-md font-medium text-sm hover:bg-mint/10 dark:hover:bg-accent/10 transition-colors"
+                    class="text-primary dark:text-accent border border-primary dark:border-accent px-8 py-3 rounded-md font-medium text-sm hover:bg-mint hover:text-white hover:border-mint dark:hover:bg-accent/10 transition-colors"
                 >
                     <span class="flex items-center gap-2">
                         <EnvelopeIcon class="w-5 h-5" />

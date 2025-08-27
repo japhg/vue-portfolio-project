@@ -68,7 +68,7 @@ import techStacks from '@/data/tech-stacks.json'
                                 <button
                                     class="group relative px-8 py-3 border border-primary/60 dark:border-accent text-primary/80 dark:text-white text-sm md:text-base font-medium rounded-lg transition-all duration-300 hover:border-mint hover:bg-mint hover:text-white dark:hover:bg-accent/90 dark:hover:text-black hover:shadow-lg hover:shadow-accent/20"
                                 >
-                                    View My Work
+                                    Explore ->
                                     <div
                                         class="absolute inset-x-0 h-px -bottom-1 bg-primary dark:bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform"
                                     />
