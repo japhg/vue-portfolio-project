@@ -53,10 +53,10 @@ watchEffect(() => {
     <nav class="relative">
         <!-- Fixed Navigation Bar -->
         <div
-            class="fixed top-0 left-0 right-0 z-40 border-b transition-colors duration-300"
+            class="fixed top-0 left-0 right-0 z-40 border-b dark:border-none transition-colors duration-300"
             :class="
                 isScrolled
-                    ? 'bg-surface/90 dark:bg-transparent/10 backdrop-blur-lg border-secondary/10 '
+                    ? 'bg-surface/90 dark:bg-background/50 backdrop-blur-lg border-secondary/10 '
                     : 'border-transparent'
             "
         >
@@ -116,7 +116,7 @@ watchEffect(() => {
             <div v-show="isMenuOpen" class="fixed top-0 left-0 right-0 z-[100] md:hidden">
                 <!-- Menu content with background -->
                 <div
-                    class="w-full bg-surface/90 dark:bg-primary border-b border-secondary/10 shadow-lg"
+                    class="w-full bg-surface/90 dark:bg-background border-b border-secondary/10 dark:border-none shadow-lg"
                 >
                     <!-- Logo and close button -->
                     <div class="flex justify-between items-center p-4 bg-background">
