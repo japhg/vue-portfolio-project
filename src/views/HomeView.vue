@@ -7,22 +7,25 @@ import Skills from '@/components/Home/Skills.vue'
 import WorkExperience from '@/components/Home/WorkExperience.vue'
 import Chatbot from '@/components/Chatbot.vue'
 import { motion, useScroll } from 'motion-v'
+import { Analytics } from '@vercel/analytics/vue'
 
 const { scrollYProgress } = useScroll()
 
 const scrollIndicator = {
     scaleX: scrollYProgress,
-    position: "fixed",
+    position: 'fixed',
     top: 0,
     left: 0,
     right: 0,
-    height: "5px",
+    height: '5px',
     originX: 0,
-    backgroundColor: "#0ABAB5",
+    backgroundColor: '#0ABAB5',
 }
 </script>
 
 <template>
+    <Analytics mode="auto" />
+
     <div class="w-full max-w-6xl">
         <motion.div id="scroll-indicator" :style="scrollIndicator" />
 
@@ -36,7 +39,7 @@ const scrollIndicator = {
 
             <hr class="border-secondary/10" />
         </main>
-        
+
         <!-- Chatbot -->
         <Chatbot />
     </div>

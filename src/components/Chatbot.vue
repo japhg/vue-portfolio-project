@@ -150,7 +150,7 @@ const messageVariants = {
         animate="open"
         exit="closed"
         :transition="{ type: 'spring', stiffness: 300, damping: 30 }"
-        class="fixed bottom-28 right-6 z-40 w-96 h-[500px] bg-white dark:bg-gray-800 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 flex flex-col overflow-hidden backdrop-blur-sm"
+        class="fixed bottom-28 right-0 md:right-6 top-2 md:top-0 mx-2 z-50 w-auto md:w-96 h-[500px] bg-white dark:bg-gray-800 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 flex flex-col overflow-hidden backdrop-blur-sm"
     >
         <!-- Header -->
         <div
