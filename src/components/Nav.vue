@@ -1,18 +1,34 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, watchEffect } from 'vue'
-import { RouterLink } from 'vue-router'
+import { onBeforeUnmount, onMounted, onUnmounted, ref, Transition, watchEffect } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
 import StarIcon from './icons/StarIcon.vue'
 import MenuIcon from './icons/MenuIcon.vue'
 import XMarkIcon from './icons/XMarkIcon.vue'
 import links from '@/data/nav-links.json'
 import MoonIcon from './icons/MoonIcon.vue'
 import SunIcon from './icons/SunIcon.vue'
+import { motion } from 'motion-v'
 
+const route = useRoute()
 const isMenuOpen = ref(false)
+const activeSection = ref('#home')
 
 // Close mobile menu when clicking a link or resizing to desktop
 const closeMenu = () => {
     isMenuOpen.value = false
+}
+
+// Handle smooth scrolling to sections
+const scrollToSection = (url: string) => {
+    const targetId = url.replace('#', '')
+    const targetElement = document.getElementById(targetId)
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        })
+    }
+    closeMenu()
 }
 
 // Add resize listener to close menu when resizing to desktop
@@ -28,10 +44,22 @@ const isScrolled = ref(false)
 
 const handleScroll = () => {
     isScrolled.value = window.scrollY > 50
+
+    const sections = links.map((link) => link.url.replace('#', ''))
+    const scrollPosition = window.scrollY + 100
+
+    for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i])
+        if (section && section.offsetTop <= scrollPosition) {
+            activeSection.value = `#${sections[i]}`
+            break
+        }
+    }
 }
 
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
+    handleScroll()
 })
 
 onUnmounted(() => {
@@ -64,7 +92,11 @@ watchEffect(() => {
                 class="w-full max-w-7xl mx-auto flex justify-between items-center py-4 px-5 md:px-10"
             >
                 <!-- Logo -->
-                <a href="#home" class="flex items-center gap-2">
+                <a
+                    href="#home"
+                    @click.prevent="scrollToSection('#home')"
+                    class="flex items-center gap-2 cursor-pointer"
+                >
                     <p class="text-mint bg:text-accent flex items-center gap-2">
                         <StarIcon class="w-8 h-8" />
                         <span class="font-medium">jphi</span>
@@ -77,11 +109,28 @@ watchEffect(() => {
                         v-for="link in links"
                         :key="link.title"
                         :href="link.url"
-                        class="relative px-2 py-1 text-[15px] text-primary/90 hover:text-primary dark:text-secondary dark:hover:text-accent transition-colors group"
+                        @click.prevent="scrollToSection(link.url)"
+                        class="relative px-2 py-1 text-[15px] text-primary/90 hover:text-primary dark:text-secondary dark:hover:text-accent transition-colors group cursor-pointer"
                     >
                         {{ link.title }}
                         <span
                             class="absolute bottom-0 left-0 w-full h-0.5 bg-mint dark:bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
+                        />
+
+                        <motion.div
+                            v-if="activeSection === link.url"
+                            class="absolute bottom-0 left-0 right-0 h-0.5 bg-mint dark:bg-accent"
+                            layoutId="activeTab"
+                            :animate="{
+                                x: 0,
+                                opacity: 1,
+                            }"
+                            :transition="{
+                                default: { type: 'spring' },
+                                opacity: { ease: 'linear' },
+                                stiffness: 300,
+                                damping: 30,
+                            }"
                         />
                     </a>
                     <button type="button" @click="isDark = !isDark" aria-label="Toggle color mode">
@@ -154,7 +203,7 @@ watchEffect(() => {
                                 :key="link.title"
                                 :href="link.url"
                                 class="block group"
-                                @click="closeMenu"
+                                @click.prevent="scrollToSection(link.url)"
                             >
                                 <div
                                     class="px-6 py-3 text-primary dark:text-secondary hover:bg-accent/10 transition-colors duration-200"

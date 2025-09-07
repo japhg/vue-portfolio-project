@@ -27,39 +27,53 @@ import HowHeFound from '../About/HowHeFound.vue'
                                 <span class="text-mint dark:text-accent font-medium">
                                     full-stack web developer
                                 </span>
-                                based in the Philippines, dedicated to creating elegant solutions to
-                                complex problems.
-                            </p>
-                            <p
-                                class="text-secondary/85 dark:text-muted text-base md:text-lg leading-relaxed"
-                            >
-                                With a
-                                <span class="text-primary dark:text-secondary font-medium">
-                                    Bachelor's degree in Information Technology
-                                </span>
-                                , major in Information Management from Bestlink College of the
-                                Philippines, I bring a solid foundation in both theory and practice
-                                to my development work.
+                                who currently based in the Philippines. I graduated with a
+                                Bachelor’s degree in Information Technology, majoring in Information
+                                Management, from Bestlink College of the Philippines.
                             </p>
                         </div>
 
                         <!-- Quick Stats -->
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
                             <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
-                                <div class="text-mint dark:text-accent text-2xl md:text-3xl font-bold">2+</div>
-                                <div class="text-gray-500 dark:text-muted text-sm mt-1">Years Experience</div>
+                                <div
+                                    class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
+                                >
+                                    2+
+                                </div>
+                                <div class="text-gray-500 dark:text-muted text-sm mt-1">
+                                    Years Experience
+                                </div>
                             </div>
                             <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
-                                <div class="text-mint dark:text-accent text-2xl md:text-3xl font-bold">10+</div>
-                                <div class="text-gray-500 dark:text-muted text-sm mt-1">Projects Completed</div>
+                                <div
+                                    class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
+                                >
+                                    10+
+                                </div>
+                                <div class="text-gray-500 dark:text-muted text-sm mt-1">
+                                    Projects Completed
+                                </div>
                             </div>
                             <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
-                                <div class="text-mint dark:text-accent text-2xl md:text-3xl font-bold">5+</div>
-                                <div class="text-gray-500 dark:text-muted text-sm mt-1">Happy Clients</div>
+                                <div
+                                    class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
+                                >
+                                    5+
+                                </div>
+                                <div class="text-gray-500 dark:text-muted text-sm mt-1">
+                                    Happy Clients
+                                </div>
                             </div>
                             <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
-                                <div class="text-mint dark:text-accent text-2xl md:text-3xl font-bold">3+</div>
-                                <div class="text-gray-500 dark:text-muted text-sm mt-1">Companies Worked</div>
+                                <div
+                                    class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
+                                >
+                                    3+
+                                </div>
+                                <div class="text-gray-500 dark:text-muted text-sm mt-1">
+                                    Companies Worked
+                                </div>
                             </div>
                         </div>
                     </div>

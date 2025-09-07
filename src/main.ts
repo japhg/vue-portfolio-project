@@ -5,6 +5,7 @@ import App from "./App.vue";
 import router from "./router";
 import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
+import MotionResolver from 'motion-v/resolver'
 
 createApp(App)
     .use(router)
@@ -13,4 +14,5 @@ createApp(App)
             preset: Aura
         }
     })
+    .use(MotionResolver)
     .mount("#app");

@@ -3,7 +3,7 @@ import LinkIcon from '../icons/LinkIcon.vue'
 import experiences from '@/data/experiences.json'
 </script>
 <template>
-    <section class="h-full px-5">
+    <section class="h-full px-5" id="work-experience">
         <div class="w-full flex justify-center items-center">
             <div class="w-full max-w-5xl flex flex-col gap-8">
                 <h2
