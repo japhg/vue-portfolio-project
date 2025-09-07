@@ -6,7 +6,6 @@ import router from "./router";
 import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
 import MotionResolver from 'motion-v/resolver'
-import { Analytics } from "@vercel/analytics/next"
 
 createApp(App)
     .use(router)
@@ -16,5 +15,4 @@ createApp(App)
         }
     })
     .use(MotionResolver)
-    .use(Analytics)
     .mount("#app");
