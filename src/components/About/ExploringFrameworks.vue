@@ -12,23 +12,25 @@ import StarIcon from '../icons/StarIcon.vue'
                         <h1
                             class="w-full flex flex-col md:flex-row md:gap-3 text-xl md:text-3xl font-normal"
                         >
-                            Working With
+                            Exploring Frameworks
                             <span class="text-muted">Frameworks</span>
                         </h1>
                     </div>
                     <div class="flex flex-col gap-5">
                         <p class="text-secondary/80 dark:text-muted text-sm md:text-lg">
-                            To build modern, scalable web applications, I specialize in a variety of
-                            powerful frameworks. On the front-end, I primarily work with Vue.js and
-                            Nuxt.js, which allow me to create reactive, component-based user
-                            interfaces.
+                            Eager to expand my skill set, I embarked on a journey to master
+                            industry-leading frameworks such as Laravel, Vue.js, and Inertia.js.
+                            Throughout this process, I'm not only deepened my understanding of web
+                            development but also gained hands-on experience in creating dynamic,
+                            full-stack applications. This comprehensive training honed my ability to
+                            build scalable, maintainable systems and significantly enhanced my
+                            analytical problem-solving skills, enabling me to tackle complex
+                            development challenges with confidence.
                         </p>
                         <p class="text-secondary/80 dark:text-muted text-sm md:text-lg">
-                            For the back-end, my expertise is in Laravel, a robust PHP framework
-                            that enables me to build secure and efficient APIs and server-side
-                            logic. I also leverage Inertia.js to seamlessly connect my Laravel
-                            back-end with a Vue.js front-end, creating a monolithic, full-stack
-                            application with the feel of a single-page app.
+                            Additionally, I became proficient in integrating front-end and back-end
+                            technologies seamlessly, further solidifying my expertise as a
+                            full-stack developer.
                         </p>
                     </div>
                 </div>

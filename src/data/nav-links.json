@@ -1,14 +1,22 @@
 [
-  {
-    "title": "About",
-    "url": "#about"
-  },
-  {
-    "title": "Projects",
-    "url": "#project"
-  },
-  {
-    "title": "Contact",
-    "url": "#contact"
-  }
+    {
+        "title": "Home",
+        "url": "#home"
+    },
+    {
+        "title": "About",
+        "url": "#about"
+    },
+    {
+        "title": "Experience",
+        "url": "#work-experience"
+    },
+    {
+        "title": "Projects",
+        "url": "#project"
+    },
+    {
+        "title": "Contact",
+        "url": "#contact"
+    }
 ]

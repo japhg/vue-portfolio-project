@@ -18,7 +18,7 @@ import techStacks from '@/data/tech-stacks.json'
 
                 <!-- Main Content -->
                 <div class="relative w-full p-5">
-                    <div class="max-w-3xl mx-auto ">
+                    <div class="max-w-3xl mx-auto">
                         <!-- Header -->
                         <div class="space-y-5">
                             <h3

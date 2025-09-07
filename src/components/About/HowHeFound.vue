@@ -17,15 +17,19 @@ import StarIcon from '../icons/StarIcon.vue'
                     </div>
                     <div class="flex flex-col gap-5">
                         <p class="text-secondary/80 dark:text-muted text-sm md:text-lg">
-                            My journey into web development began in college, where I was introduced
-                            to the basics of front-end and back-end technologies. I discovered a
-                            passion for creating dynamic, user-friendly websites and decided to
-                            pursue it as a career.
+                            I began my journey in web development during my third year of college
+                            when one of my subjects, Project Management, required us to create a
+                            web-based system. The first system that I developed was a Student
+                            Information System.
                         </p>
                         <p class="text-secondary/80 dark:text-muted text-sm md:text-lg">
-                            After graduating, I dedicated myself to mastering modern frameworks and
-                            tools, continuously learning and adapting to the ever-evolving tech
-                            landscape.
+                            During my fourth year of college, I was elected as the Lead Programmer
+                            of my cluster. My responsibilities included managing the programmers and
+                            overseeing the integration of our Enterprise Integration System (EIS).
+                            The system I developed was a Human Resource Management System, which
+                            handled tasks such as hiring, processing applicants’ requirements,
+                            conducting interviews, and more. It took me almost three months to
+                            developed this system.
                         </p>
                     </div>
                 </div>
