@@ -44,33 +44,27 @@ const socials = [
 </script>
 
 <template>
-    <footer class="mt-20 md:mt-32">
-        <div class="w-full flex flex-col justify-center items-center">
-            <div class="w-full h-full flex flex-col justify-center items-center gap-10">
-                <h4 class="text-xl font-medium text-center text-primary dark:text-secondary">
-                    Socials:
-                </h4>
+    <footer class="border-t border-secondary/10 px-5 py-8">
+        <div class="mx-auto w-full max-w-7xl flex flex-col items-center justify-between gap-6 md:flex-row">
+            <div class="text-sm text-center text-secondary/80 dark:text-muted md:text-left">
+                <p>© {{ year }} Jphi — sketched, coded &amp; cared for in the Philippines.</p>
             </div>
 
-            <div class="flex flex-wrap items-center gap-3 mt-3">
+            <div class="flex flex-wrap items-center justify-center gap-3">
                 <a
                     v-for="(social, key) in socials"
                     :key="key"
                     :href="social.url"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-accent"
+                    class="motion-pill rounded-full border border-secondary/10 p-2 text-primary hover:bg-primary/5 dark:text-secondary dark:hover:bg-secondary/10"
+                    :aria-label="social.name"
                 >
                     <component
                         :is="social.icon"
-                        class="w-8 h-8 fill-primary/80 dark:fill-white/80 hover:fill-mint dark:hover:fill-accent hover:shadow-xl transition-all duration-300 ease-in-out"
+                        class="w-5 h-5 fill-primary/80 dark:fill-white/80 hover:fill-mint dark:hover:fill-accent transition-all duration-300 ease-in-out"
                     />
                 </a>
-            </div>
-
-            <div class="py-4 font-light text-sm text-center text-secondary/80 dark:text-muted">
-                <hr class="border-secondary/10 mb-4" />
-                <p>© {{ year }} Jph<i>i</i> Portfolio. All rights Reserved.</p>
             </div>
         </div>
     </footer>

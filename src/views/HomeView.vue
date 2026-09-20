@@ -26,18 +26,16 @@ const scrollIndicator = {
 <template>
     <Analytics mode="auto" />
 
-    <div class="w-full max-w-6xl">
+    <div class="w-full">
         <motion.div id="scroll-indicator" :style="scrollIndicator" />
 
-        <main class="flex flex-col gap-10 main-content">
+        <main class="main-content">
             <Home />
             <About />
             <Skills />
             <WorkExperience />
             <Projects />
             <GetInTouch />
-
-            <hr class="border-secondary/10" />
         </main>
 
         <!-- Chatbot -->

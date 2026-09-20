@@ -110,17 +110,13 @@ const messageVariants = {
     <!-- Chatbot Toggle Button -->
     <motion.button
         @click="toggleChat"
-        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-r from-mint to-accent dark:from-accent dark:to-mint text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center justify-center group overflow-hidden"
+        class="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border border-secondary/10 bg-primary text-surface transition-colors duration-200 hover:bg-primary/85 dark:bg-secondary dark:text-background"
         :class="{ 'rotate-45': isOpen }"
-        :whileHover="{ scale: 1.1 }"
-        :animate="{ y: [-30, 30, -30] }"
-        :transition="{ duration: 3, repeat: Infinity }"
+        :whileHover="{ scale: 1.04 }"
     >
-        <div v-if="!isOpen" class="absolute inset-0 bg-white/20 rounded-full animate-pulse"></div>
-
         <svg
             v-if="!isOpen"
-            class="w-7 h-7 z-10"
+            class="w-5 h-5 z-10"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -132,7 +128,7 @@ const messageVariants = {
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
             />
         </svg>
-        <svg v-else class="w-7 h-7 z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg v-else class="w-5 h-5 z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -150,15 +146,13 @@ const messageVariants = {
         animate="open"
         exit="closed"
         :transition="{ type: 'spring', stiffness: 300, damping: 30 }"
-        class="fixed bottom-28 right-0 md:right-6 top-2 md:top-0 mx-2 z-50 w-auto md:w-96 h-[500px] bg-white dark:bg-gray-800 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 flex flex-col overflow-hidden backdrop-blur-sm"
+        class="fixed bottom-24 right-0 md:right-6 top-2 md:top-auto mx-2 z-50 w-auto md:w-96 h-[500px] bg-surface dark:bg-surface rounded-lg border border-secondary/10 flex flex-col overflow-hidden"
     >
         <!-- Header -->
         <div
-            class="bg-gradient-to-r from-mint to-accent dark:from-accent dark:to-mint text-white p-4 flex items-center gap-3 relative"
+            class="border-b border-secondary/10 bg-surface p-4 flex items-center gap-3 relative"
         >
-            <div
-                class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm"
-            >
+            <div class="w-10 h-10 bg-background rounded-full flex items-center justify-center">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
@@ -168,13 +162,13 @@ const messageVariants = {
             <div class="flex-1">
                 <h3 class="font-semibold text-base">James's Chatbot</h3>
                 <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <div class="w-2 h-2 bg-primary dark:bg-secondary rounded-full"></div>
                     <p class="text-xs opacity-90">Online • Ready to help</p>
                 </div>
             </div>
             <button
                 @click="toggleChat"
-                class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+                class="w-8 h-8 rounded-full border border-secondary/10 flex items-center justify-center hover:bg-primary/5 dark:hover:bg-secondary/10 transition-colors"
             >
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -206,9 +200,9 @@ const messageVariants = {
                     <!-- Avatar for bot messages -->
                     <div
                         v-if="message.isBot"
-                        class="w-8 h-8 bg-gradient-to-r from-mint to-accent rounded-full flex items-center justify-center flex-shrink-0"
+                        class="w-8 h-8 bg-background rounded-full flex items-center justify-center flex-shrink-0"
                     >
-                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 text-primary dark:text-secondary" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                             />
@@ -220,8 +214,8 @@ const messageVariants = {
                         class="px-4 py-3 rounded-2xl text-sm leading-relaxed whitespace-pre-line"
                         :class="
                             message.isBot
-                                ? 'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-bl-md'
-                                : 'bg-gradient-to-r from-mint to-accent dark:from-accent dark:to-mint text-white rounded-br-md'
+                                ? 'bg-background dark:bg-background text-primary dark:text-secondary rounded-bl-md'
+                                : 'bg-primary dark:bg-secondary text-surface dark:text-background rounded-br-md'
                         "
                     >
                         {{ message.text }}
@@ -255,9 +249,9 @@ const messageVariants = {
             >
                 <div class="flex items-end gap-2">
                     <div
-                        class="w-8 h-8 bg-gradient-to-r from-mint to-accent rounded-full flex items-center justify-center"
+                        class="w-8 h-8 bg-background rounded-full flex items-center justify-center"
                     >
-                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 text-primary dark:text-secondary" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                             />
@@ -285,7 +279,7 @@ const messageVariants = {
 
         <!-- Quick Replies -->
         <div
-            class="p-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50"
+            class="p-4 border-t border-secondary/10 bg-background dark:bg-background"
         >
             <p class="text-xs text-gray-500 dark:text-gray-400 mb-3 font-medium">
                 Quick questions:
@@ -295,7 +289,7 @@ const messageVariants = {
                     v-for="reply in quickReplies"
                     :key="reply"
                     @click="handleQuickReply(reply)"
-                    class="px-3 py-2 text-xs bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-xl hover:bg-mint hover:text-white dark:hover:bg-accent dark:hover:text-black transition-all duration-200 border border-gray-200 dark:border-gray-700 hover:border-transparent hover:shadow-md"
+                    class="px-3 py-2 text-xs bg-surface dark:bg-surface text-gray-700 dark:text-gray-300 rounded-full hover:bg-primary hover:text-surface dark:hover:bg-secondary dark:hover:text-background transition-colors duration-200 border border-gray-200 dark:border-gray-700"
                 >
                     {{ reply }}
                 </button>
@@ -330,20 +324,6 @@ const messageVariants = {
     background: #6b7280;
 }
 
-@keyframes float {
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-.animate-float {
-    animation: float 3s ease-in-out infinite;
-}
-
 .message-bubble {
     animation: slideIn 0.3s ease-out;
 }
@@ -359,10 +339,4 @@ const messageVariants = {
     }
 }
 
-.gradient-text {
-    background: linear-gradient(135deg, #0abab5, #10b981);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 </style>

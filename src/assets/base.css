@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Patrick+Hand&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,49 +9,44 @@
 }
 
 @layer base {
-    @font-face {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 100;
-        font-display: swap;
-        src: url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-    }
-    @font-face {
-        font-family: "Archivo";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-    }
+    *, *::before, *::after { box-sizing: border-box; }
 }
 
 /* Theme tokens via CSS variables (RGB channels) */
 :root {
     /* Light mode */
-    --color-background: 248 250 252; /* slate-50 */
-    --color-surface: 255 255 255;     /* white */
-    --color-primary: 17 24 39;        /* gray-900 */
-    --color-secondary: 71 85 105;     /* slate-600 */
-    --color-mint: 10 186 181;         /* #0ABAB5 */
-    --color-accent: 100 255 218;      /* #64FFDA */
-    --color-highlight: 35 53 84;      /* #233554 */
-    --color-muted: 148 163 184;       /* slate-400 */
+    --color-background: 248 241 220;
+    --color-surface: 255 252 239;
+    --color-primary: 39 50 45;
+    --color-secondary: 79 88 77;
+    --color-mint: 21 150 126;
+    --color-accent: 240 103 72;
+    --color-highlight: 255 218 94;
+    --color-muted: 113 112 96;
 }
 
 .dark {
     /* Dark mode */
-    --color-background: 22 33 62;     /* #16213E */
-    --color-surface: 35 53 84;        /* #233554 */
-    --color-primary: 229 234 245;     /* #E5EAF5 */
-    --color-secondary: 170 184 194;   /* #AAB8C2 */
-    --color-mint: 10 186 181;         /* #0ABAB5 */
-    --color-accent: 100 255 218;      /* #64FFDA */
-    --color-highlight: 35 53 84;      /* #233554 */
-    --color-muted: 139 152 170;       /* ~slate-500 */
+    --color-background: 33 39 35;
+    --color-surface: 46 53 47;
+    --color-primary: 255 248 219;
+    --color-secondary: 226 223 198;
+    --color-mint: 91 203 169;
+    --color-accent: 255 135 101;
+    --color-highlight: 91 86 58;
+    --color-muted: 182 181 158;
 }
 
 @layer base {
     html, body {
         @apply bg-background text-primary antialiased;
+        font-family: "DM Sans", sans-serif;
+    }
+
+    button, input, textarea { font: inherit; }
+
+    :focus-visible {
+        outline: 3px solid rgb(var(--color-accent));
+        outline-offset: 4px;
     }
 }

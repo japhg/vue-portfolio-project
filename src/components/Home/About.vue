@@ -5,37 +5,36 @@ import HowHeFound from '../About/HowHeFound.vue'
 </script>
 
 <template>
-    <section class="flex h-full mb-20 px-5" id="about">
-        <div class="flex flex-col">
-            <div class="w-full max-w-7xl mt-20">
-                <!-- Hero Section -->
-                <div
-                    class="relative overflow-hidden rounded-2xl bg-white/90 dark:bg-secondary/5 p-8 md:p-12 mb-16 border border-secondary/10 shadow-sm"
-                >
-                    <div class="relative z-10">
+    <section class="section-shell px-5 py-20 md:py-28" id="about">
+        <div class="mx-auto w-full max-w-7xl">
+            <!-- Overview Section -->
+            <div class="glass-panel relative overflow-hidden rounded-[2rem] p-6 md:p-10 mb-12">
+                <div class="relative z-10 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+                    <div>
+                        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-mint">
+                            About me
+                        </p>
                         <h2
-                            class="text-primary dark:text-secondary text-3xl md:text-5xl leading-tight font-semibold mb-6"
+                            class="text-primary dark:text-secondary text-3xl md:text-5xl leading-tight font-semibold"
                         >
-                            About <span class="text-mint dark:text-accent">Me</span>
+                            Systems thinking with a product mindset.
                         </h2>
+                    </div>
 
-                        <div class="max-w-3xl space-y-6">
-                            <p
-                                class="text-secondary/85 dark:text-muted text-base md:text-lg leading-relaxed"
-                            >
-                                I am a passionate
-                                <span class="text-mint dark:text-accent font-medium">
-                                    full-stack web developer
-                                </span>
-                                who currently based in the Philippines. I graduated with a
-                                Bachelor’s degree in Information Technology, majoring in Information
-                                Management, from Bestlink College of the Philippines.
-                            </p>
-                        </div>
+                    <div class="space-y-6">
+                        <p class="text-secondary/85 dark:text-muted text-base md:text-lg leading-8">
+                            I am a passionate
+                            <span class="text-mint dark:text-accent font-medium">
+                                full-stack web developer
+                            </span>
+                            who currently based in the Philippines. I graduated with a Bachelor’s
+                            degree in Information Technology, majoring in Information Management,
+                            from Bestlink College of the Philippines.
+                        </p>
 
                         <!-- Quick Stats -->
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                            <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div class="motion-surface rounded-2xl border border-secondary/10 bg-background/60 p-4">
                                 <div
                                     class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
                                 >
@@ -45,7 +44,7 @@ import HowHeFound from '../About/HowHeFound.vue'
                                     Years Experience
                                 </div>
                             </div>
-                            <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
+                            <div class="motion-surface rounded-2xl border border-secondary/10 bg-background/60 p-4">
                                 <div
                                     class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
                                 >
@@ -55,7 +54,7 @@ import HowHeFound from '../About/HowHeFound.vue'
                                     Projects Completed
                                 </div>
                             </div>
-                            <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
+                            <div class="motion-surface rounded-2xl border border-secondary/10 bg-background/60 p-4">
                                 <div
                                     class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
                                 >
@@ -65,7 +64,7 @@ import HowHeFound from '../About/HowHeFound.vue'
                                     Happy Clients
                                 </div>
                             </div>
-                            <div class="p-4 bg-primary/5 dark:bg-secondary/10 rounded-lg">
+                            <div class="motion-surface rounded-2xl border border-secondary/10 bg-background/60 p-4">
                                 <div
                                     class="text-mint dark:text-accent text-2xl md:text-3xl font-bold"
                                 >
@@ -77,28 +76,21 @@ import HowHeFound from '../About/HowHeFound.vue'
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Background Pattern -->
-                    <div class="absolute top-0 right-0 w-1/3 h-full opacity-5">
-                        <div
-                            class="w-full h-full bg-gradient-to-bl from-mint/60 dark:from-accent to-transparent"
-                        ></div>
-                    </div>
+            <!-- Journey Sections -->
+            <div class="grid gap-6 lg:grid-cols-3">
+                <div>
+                    <HowHeFound data-aos="fade-up" />
                 </div>
 
-                <!-- Journey Sections -->
-                <div class="space-y-16">
-                    <div class="transform hover:scale-[1.01] transition-transform duration-300">
-                        <HowHeFound data-aos="fade-up" />
-                    </div>
+                <div>
+                    <FirstProfessionalExperience data-aos="fade-up" />
+                </div>
 
-                    <div class="transform hover:scale-[1.01] transition-transform duration-300">
-                        <FirstProfessionalExperience data-aos="fade-up" />
-                    </div>
-
-                    <div class="transform hover:scale-[1.01] transition-transform duration-300">
-                        <ExploringFrameworks data-aos="fade-up" />
-                    </div>
+                <div>
+                    <ExploringFrameworks data-aos="fade-up" />
                 </div>
             </div>
         </div>

@@ -3,39 +3,41 @@ import LinkIcon from '../icons/LinkIcon.vue'
 import experiences from '@/data/experiences.json'
 </script>
 <template>
-    <section class="h-full px-5" id="work-experience">
-        <div class="w-full flex justify-center items-center">
-            <div class="w-full max-w-5xl flex flex-col gap-8">
-                <h2
-                    class="text-primary dark:text-secondary text-2xl md:text-5xl leading-2 font-semibold text-center"
-                >
-                    Work <span class="text-mint dark:text-accent">Experience</span>
-                </h2>
-                <div class="relative flex flex-col gap-8">
+    <section class="section-shell px-5 py-20 md:py-28" id="work-experience">
+        <div class="mx-auto w-full max-w-6xl">
+            <div class="grid gap-12 lg:grid-cols-[0.38fr_0.62fr]">
+                <div class="lg:sticky lg:top-28 h-fit">
+                    <h2
+                        class="text-primary dark:text-secondary text-3xl md:text-5xl leading-tight font-semibold"
+                    >
+                        Work <span class="premium-gradient-text">Experience</span>
+                    </h2>
+                    <p class="mt-4 text-secondary/80 dark:text-muted leading-7">
+                        Recent roles and client work across full-stack product development.
+                    </p>
+                </div>
+
+                <div class="relative flex flex-col gap-6">
                     <!-- Timeline line -->
                     <div
-                        class="absolute left-0 md:left-1/2 h-full w-px bg-secondary/20 dark:bg-accent/20 transform -translate-x-px md:-translate-x-px"
+                        class="absolute left-0 top-2 h-[calc(100%-1rem)] w-px bg-secondary/20 dark:bg-accent/20"
                     />
 
                     <div
                         v-for="(experience, index) in experiences"
                         :key="index"
-                        class="relative grid grid-cols-1 md:grid-cols-2 gap-8"
-                        :class="
-                            index % 2 === 0 ? 'md:pr-8' : 'md:pl-8 md:transform md:translate-x-full'
-                        "
+                        class="relative pl-7"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                     >
                         <!-- Timeline dot -->
                         <div
-                            class="absolute -left-0.5 md:left-1/2 w-4 h-4 bg-mint dark:bg-accent rounded-full transform -translate-x-1.5 md:-translate-x-2 mt-2"
+                            class="absolute -left-[7px] top-2 w-3.5 h-3.5 rounded-full bg-primary ring-4 ring-background dark:bg-secondary"
                         />
 
                         <!-- Content card -->
                         <div
-                            class="ml-6 md:ml-0 bg-white/95 dark:bg-secondary/5 border border-secondary/10 dark:border-none rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
-                            :class="index % 2 === 1 ? 'md:mr-8' : 'md:ml-8 md:col-start-1'"
+                            class="glass-panel motion-surface rounded-[1.5rem] p-6"
                         >
                             <div class="flex items-start gap-4 mb-4">
                                 <div class="flex-1">
@@ -43,9 +45,9 @@ import experiences from '@/data/experiences.json'
                                         v-if="experience.url"
                                         :href="experience.url"
                                         target="_blank"
-                                        class="group inline-flex items-center gap-2 text-primary hover:text-accent transition-colors duration-300"
+                                        class="group motion-link inline-flex items-center gap-2 text-primary dark:text-secondary transition-colors duration-300"
                                     >
-                                        <h2 class="text-xl font-bold group-hover:underline">
+                                        <h2 class="text-xl font-bold">
                                             {{ experience.title }}
                                         </h2>
                                         <LinkIcon
@@ -61,7 +63,7 @@ import experiences from '@/data/experiences.json'
                                         >
                                             {{ experience.subtitle }}
                                         </h4>
-                                        <p class="text-sm text-mint dark:text-accent mt-1">
+                                        <p class="text-sm font-medium text-primary/70 dark:text-secondary/70 mt-1">
                                             {{ experience.date }}
                                         </p>
                                     </div>
@@ -72,7 +74,7 @@ import experiences from '@/data/experiences.json'
                                 <div
                                     v-for="(desc, descIndex) in experience.description"
                                     :key="descIndex"
-                                    class="prose prose-invert text-sm text-secondary/80 dark:text-muted max-w-none"
+                                    class="prose prose-invert text-sm leading-7 text-secondary/80 dark:text-muted max-w-none"
                                     v-html="desc"
                                 />
                             </div>
@@ -81,7 +83,7 @@ import experiences from '@/data/experiences.json'
                                 <span
                                     v-for="tech in experience.techStack"
                                     :key="tech"
-                                    class="px-2 py-1 text-xs rounded-full bg-mint/10 text-mint dark:bg-accent/10 dark:text-accent"
+                                    class="motion-pill px-2 py-1 text-xs rounded-full bg-primary/5 text-primary dark:bg-secondary/10 dark:text-secondary"
                                 >
                                     {{ tech }}
                                 </span>

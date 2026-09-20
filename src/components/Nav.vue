@@ -81,15 +81,15 @@ watchEffect(() => {
     <nav class="relative">
         <!-- Fixed Navigation Bar -->
         <div
-            class="fixed top-0 left-0 right-0 z-40 border-b dark:border-none transition-colors duration-300"
+            class="w-full transition-colors duration-300"
             :class="
                 isScrolled
-                    ? 'bg-surface/90 dark:bg-background/50 backdrop-blur-lg border-secondary/10 '
+                    ? 'bg-transparent'
                     : 'border-transparent'
             "
         >
             <div
-                class="w-full max-w-7xl mx-auto flex justify-between items-center py-4 px-5 md:px-10"
+                class="w-full max-w-7xl mx-auto flex justify-between items-center py-4 px-5"
             >
                 <!-- Logo -->
                 <a
@@ -97,29 +97,38 @@ watchEffect(() => {
                     @click.prevent="scrollToSection('#home')"
                     class="flex items-center gap-2 cursor-pointer"
                 >
-                    <p class="text-mint bg:text-accent flex items-center gap-2">
-                        <StarIcon class="w-8 h-8" />
-                        <span class="font-medium">jphi</span>
+                    <p class="text-primary dark:text-secondary flex items-center gap-2">
+                        <span
+                            class="grid h-9 w-9 place-items-center rounded-full border border-secondary/10 bg-surface/80 shadow-sm backdrop-blur"
+                        >
+                            <StarIcon class="w-5 h-5 text-mint" />
+                        </span>
+                        <span class="font-semibold tracking-wide">jphi</span>
                     </p>
                 </a>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center gap-8">
+                <div
+                    class="hidden md:flex items-center gap-1 rounded-full border border-secondary/10 bg-surface/70 p-1 shadow-sm backdrop-blur-xl dark:bg-surface/60"
+                >
                     <a
                         v-for="link in links"
                         :key="link.title"
                         :href="link.url"
                         @click.prevent="scrollToSection(link.url)"
-                        class="relative px-2 py-1 text-[15px] text-primary/90 hover:text-primary dark:text-secondary dark:hover:text-accent transition-colors group cursor-pointer"
+                        class="motion-pill relative rounded-full px-4 py-2 text-sm font-medium group cursor-pointer"
+                        :class="
+                            activeSection === link.url
+                                ? 'text-surface dark:text-background'
+                                : 'text-primary/70 hover:text-primary dark:text-secondary dark:hover:text-white'
+                        "
                     >
                         {{ link.title }}
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-0.5 bg-mint dark:bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"
-                        />
+                        <span class="hidden" />
 
                         <motion.div
                             v-if="activeSection === link.url"
-                            class="absolute bottom-0 left-0 right-0 h-0.5 bg-mint dark:bg-accent"
+                            class="absolute inset-0 -z-10 rounded-full bg-primary dark:bg-secondary"
                             layoutId="activeTab"
                             :animate="{
                                 x: 0,
@@ -133,7 +142,12 @@ watchEffect(() => {
                             }"
                         />
                     </a>
-                    <button type="button" @click="isDark = !isDark" aria-label="Toggle color mode">
+                    <button
+                        type="button"
+                        @click="isDark = !isDark"
+                        aria-label="Toggle color mode"
+                        class="motion-pill ml-1 rounded-full border border-secondary/10 bg-background/70 p-2 hover:bg-primary/5 dark:hover:bg-secondary/10"
+                    >
                         <component
                             :is="isDark ? MoonIcon : SunIcon"
                             class="w-5 h-5 text-primary/80 hover:text-mint dark:text-secondary dark:hover:text-accent transition-colors duration-200 ease-in-out"
@@ -165,7 +179,7 @@ watchEffect(() => {
             <div v-show="isMenuOpen" class="fixed top-0 left-0 right-0 z-[100] md:hidden">
                 <!-- Menu content with background -->
                 <div
-                    class="w-full bg-surface/90 dark:bg-background border-b border-secondary/10 dark:border-none shadow-lg"
+                    class="w-full bg-surface/95 dark:bg-background border-b border-secondary/10 dark:border-secondary/10"
                 >
                     <!-- Logo and close button -->
                     <div class="flex justify-between items-center p-4 bg-background">

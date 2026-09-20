@@ -20,11 +20,14 @@ defineProps({
         :href="website"
         target="_blank"
         rel="noopener noreferrer"
-        class="bg-white/30 dark:bg-highlight px-5 py-4 rounded-lg shadow-sm hover:shadow-md border border-secondary/10 dark:border-none dark:hover:bg-highlight/80 relative group transition-all duration-300"
+        class="motion-surface relative group overflow-hidden rounded-2xl border border-secondary/10 bg-background/60 px-4 py-4 hover:bg-primary/5 dark:hover:bg-secondary/10"
     >
+        <div
+            class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-mint/50 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        />
         <div class="flex flex-col items-center justify-center gap-2" :title="title">
-            <component :is="icon" class="w-12 h-12" />
-            <p class="text-primary/60 dark:text-secondary font-medium text-center">
+            <component :is="icon" class="w-10 h-10" />
+            <p class="text-primary/70 dark:text-secondary font-medium text-center text-sm">
                 {{ title }}
             </p>
         </div>

@@ -1,5 +1,47 @@
 [
     {
+        "title": "Jr. Fullstack Developer",
+        "subtitle": "The Vision Group Food Ventures Inc. - Reservo",
+        "date": "June 2026 - Present",
+        "description": [
+            "Supported the ongoing development of <span class=\"text-secondary font-semibold\">GoReservo</span> by implementing selected full-stack features and improving existing workflows. My main contributions included waitlist management, marketing campaign tools, reservation down-payment rules, administrative resources, data import and export, responsive UI updates, SEO, and bug fixes.",
+            "<span class=\"text-mint dark:text-accent font-semibold\">Key Contributions</span><ul role=\"list\" class=\"list-disc ml-6 space-y-2\"><li>Built and expanded the restaurant waitlist and queue system, including guest registration, arrival windows, queue displays, voice announcements, notifications, guest preferences, history, and staff management screens.</li><li>Developed marketing campaign tools for email and SMS, including audience filters, recipient previews, scheduled delivery, message-credit checks, unsubscribe support, reusable email templates, and AI-assisted audience suggestions.</li><li>Added configurable reservation down-payment rules and carried the required fees through the booking and payment process.</li><li>Improved administrative tools for roles and permissions, subscription plans, message-credit tracking, restaurant staff, reservation sources, and activity logs.</li><li>Added import and export workflows for customers, reservations, tables, and products.</li><li>Created a staff schedule planner and added restaurant terms-and-conditions management.</li><li>Helped refresh the public website and improve SEO through page metadata, sitemap generation, robots configuration, accessibility labels, and <code>llms.txt</code>.</li><li>Handled smaller product improvements and bug fixes involving notifications, permissions, reservation statuses, table management, WhatsApp contact links, and administrative interfaces.</li></ul>"
+        ],
+        "techStack": [
+            "Vue.js",
+            "Laravel",
+            "Laravel Blade",
+            "MySQL",
+            "TailwindCSS",
+            "Filament",
+            "TypeScript",
+            "Git",
+            "REST API",
+            "Paymongo",
+            "Cloudflare"
+        ]
+    },
+    {
+        "title": "Jr. Programmer",
+        "subtitle": "McAsia Foodtrade Corporation",
+        "date": "January 2026 - June 2026",
+        "description": [
+            "<span class=\"text-mint dark:text-accent font-semibold\">Major Projects</span><ul role=\"list\" class=\"list-disc ml-6 space-y-1\"><li>MTAP Systems - Healthcare Assessment Platform</li><li>UpmeWorks - Business Software Platform</li><li>TheCEplace - E-learning Platform</li><li>QuickJuan POS - Point of Sale System (In Development)</li></ul>",
+            "<span class=\"text-mint dark:text-accent font-semibold\">Responsibilities</span><ul role=\"list\" class=\"list-disc ml-6 space-y-1\"><li>Full-stack development of web applications</li><li>Performance optimization and maintenance</li></ul>"
+        ],
+        "techStack": [
+            "Vue.js",
+            "Laravel",
+            "Laravel Blade",
+            "MySQL",
+            "TailwindCSS",
+            "Filament",
+            "TypeScript",
+            "Git",
+            "REST API"
+        ]
+    },
+    {
         "title": "Full-Stack Web Developer",
         "subtitle": "Independent Projects",
         "date": "March 2024 - December 2025",
