@@ -1,5 +1,4 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
-import colors from 'tailwindcss/colors'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,7 +6,7 @@ export default {
     content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     theme: {
         colors: {
-            ...colors,
+            ...defaultTheme.colors,
             transparent: 'transparent',
             current: 'currentColor',
 
