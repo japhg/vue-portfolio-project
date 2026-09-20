@@ -26,8 +26,9 @@
         "subtitle": "McAsia Foodtrade Corporation",
         "date": "January 2026 - June 2026",
         "description": [
-            "<span class=\"text-mint dark:text-accent font-semibold\">Major Projects</span><ul role=\"list\" class=\"list-disc ml-6 space-y-1\"><li>MTAP Systems - Healthcare Assessment Platform</li><li>UpmeWorks - Business Software Platform</li><li>TheCEplace - E-learning Platform</li><li>QuickJuan POS - Point of Sale System (In Development)</li></ul>",
-            "<span class=\"text-mint dark:text-accent font-semibold\">Responsibilities</span><ul role=\"list\" class=\"list-disc ml-6 space-y-1\"><li>Full-stack development of web applications</li><li>Performance optimization and maintenance</li></ul>"
+            "Enhanced the design, layout, and overall user experience of the websites for McAsia Foodtrade Corporation and its sister company, Primeluxe.",
+            "<span class=\"text-mint dark:text-accent font-semibold\">Cash Request System</span><ul role=\"list\" class=\"list-disc ml-6 space-y-2\"><li>Built a role-based financial workflow system for employees and approvers.</li><li>Designed and implemented approval logic based on request types and amount thresholds.</li><li>Managed user-registration approval, department-based access, and permission enforcement.</li><li>Developed the administrative interface for handling requests, approval steps, finance verification, and treasury operations.</li><li>Automated status changes, release windows, liquidation aging, and the cancellation of expired requests.</li><li>Integrated notifications, activity logs, and system tracking to improve visibility and accountability.</li><li>Supported operational readiness through database seeders, scheduled jobs, and deployment setup.</li></ul>",
+            "<span class=\"text-mint dark:text-accent font-semibold\">Timekeeping System</span><p class=\"mt-1\">Built an employee attendance system with RFID-based check-in, attendance validation, late, undertime, and overtime calculations, and a dashboard for monitoring daily attendance. Handled the end-to-end development of the attendance workflow, employee-data logic, time-recording interface, and attendance-status visibility.</p>"
         ],
         "techStack": [
             "Vue.js",

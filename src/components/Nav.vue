@@ -66,7 +66,7 @@ onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
 })
 
-const isDark = ref(true)
+const isDark = ref(false)
 
 watchEffect(() => {
     if (isDark.value) {
